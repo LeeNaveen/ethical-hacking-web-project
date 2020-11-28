@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+fieldset {
+  background-color: #eeeeee;
+  width: 90%; 
+   font-size:14px;        
+    
+}
+r {
+  background-color: silver;
+  font-size: 19px;
+  width: 100%;
+   }
+n  {
+     font-size: 20px;
+     }
+code {
+	background-color: #eeeeee;
+          }
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+    font-family: 'Lexend Deca', sans-serif;
+  padding: 20px;
+  margin: 0;
+        width: 100%;
+        height: 20vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 2px;
+  font-size: xx-small;
+  text-align: center;
+  background: white;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+@-webkit-keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+    @keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  background: #ffffff;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+.frame-area {
+  display: block;
+  background: #f1f1f1;
+  width: 100%;  /* RESPONSIVE WIDTH */
+  max-width: auto;
+  height: 750px;
+  overflow: hidden;  /* EDIT TO hidden FOR NO SCROLLBAR */
+  border: #999999 1px solid;
+  margin: 0px;
+  padding: 0px;
+  }
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+
+  <a href="index.html"><img src="https://1.bp.blogspot.com/-tuZ2JeNu8TY/X2Gjn91qNQI/AAAAAAAAoQs/Yn_Ij5cLcp8qrFL1nPMipYGMXljXOmkBQCK4BGAYYCw/s1600/ronnie.png" class=" square responsive-img materialboxed"></a>
+
+</div>
+
+<div class="row">
+
+  <div class="leftcolumn" >
+
+
+
+
+<ul>
+
+<center><p><h1>&nbsp;Nikto</h1></p></center>
+
+<center><img src="img-nikto.webp" height="400" width="500" /></center>
+<p><br /></p>
+<p><span style="white-space: pre;">	</span>
+Nikto is an Open Source (GPL) web server scanner which performs comprehensive tests against web servers for multiple items, including over 6700 potentially dangerous files/programs, checks for outdated versions of over 1250 servers, and version specific problems on over 270 servers. It also checks for server configuration items such as the presence of multiple index files, HTTP server options, and will attempt to identify installed web servers and software. Scan items and plugins are frequently updated and can be automatically updated.</p>
+
+<p><span style="white-space: pre;">	</span>
+Nikto is not designed as a stealthy tool. It will test a web server in the quickest time possible, and is obvious in log files or to an IPS/IDS. However, there is support for LibWhisker&#39;s anti&ndash;IDS methods in case you want to give it a try (or test your IDS system).</p>
+
+<p><span style="white-space: pre;">	</span>
+Not every check is a security problem, though most are. There are some items that are <q>info only</q> type checks that look for things that may not have a security flaw, but the webmaster or security engineer may not know are present on the server. These items are usually marked appropriately in the information printed. There are also some checks for unknown items which have been seen scanned for in log files.</p>
+
+
+
+<p><br /></p>
+<p><span style="white-space: pre;">	</span>
+Original author(s) : Chris Sullo</p>
+<p><span style="white-space: pre;">	</span>
+Stable release : 2.1.5 / December 17, 2012</p>
+<p><span style="white-space: pre;">	</span>
+Written in : Perl</p>
+<p><span style="white-space: pre;">	</span>
+Operating System : Unix&ndash;like</p>
+<p><span style="white-space: pre;">	</span>
+Type : Vulnerability scanner</p>
+<p><span style="white-space: pre;">	</span>
+License : GNU GPL v2</p>
+<p><span style="white-space: pre;">	</span>
+Website : <a href="http://www.cirt.net/Nikto2">www.cirt.net/Nikto2</a></p>
+<p><br /></p>
+
+</ul>
+
+<ol>
+
+<h2><p>Features :&nbsp;</p></h2>
+
+<p><span style="white-space: pre;">   </span>
+Here are some of the major features of Nikto.</p>
+<ol>
+<li><p> SSL Support (Unix with OpenSSL or maybe Windows with ActiveState&#39;s Perl/NetSSL).&nbsp;</p></li>
+
+<li><p> Full HTTP proxy support.</p></li>
+
+<li><p> Checks for outdated server components.</p></li>
+
+<li><p> Save reports in plain text, XML, HTML, NBE or CSV.&nbsp;</p></li>
+
+<li><p> Template engine to easily customize reports.&nbsp;</p></li>
+
+<li><p> Scan multiple ports on a server, or multiple servers via input file (including nmap output).</p></li>
+
+<li><p> Easily updated via command line.</p></li>
+
+<li><p> Identifies installed software via headers, favicons and files.</p></li>
+
+<li><p> Host authentication with Basic and NTLM (New Technology LAN Manager).</p></li>
+
+<li><p> Apache and cgiwrap username enumeration.</p></li>
+
+<li><p> Guess credentials for authorization realms (including many default id/pw combos).</p></li>
+
+<li><p> Authorization guessing handles any directory, not just the root directory.&nbsp;</p></li>
+
+<li><p> Reports <q>unusual</q> headers seen.</p></li>
+
+<li><p> Save full request/response for positive tests.</p></li>
+
+<li><p> Maximum execution time per target.</p></li>
+</ol></ol>
+
+<ul>
+
+<p><br /></p>
+<h2><p>Download Link :</h2></p>
+	<p><span style="white-space: pre;">	</span>
+	&nbsp; Run from a git repo <b>&ndash;</b> <a href="https://github.com/sullo/nikto">Click Here</a> </p>
+
+<p><span style="white-space: pre;">	</span>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Zip File <b>&ndash;</b> <a href="https://github.com/sullo/nikto/archive/master.zip">Click Here</a> </p>
+<p><br /></p>
+
+<h2><p>Nikto Help :</p></h2>
+
+<fieldset>
+<code>
+
+<p>root@kali:~# nikto &ndash;&ndash;help</p>
+<p><br /></p>
+<p>&nbsp; &nbsp;Options:</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;&ndash;ask+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Whether to ask about submitting updates</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;yes&nbsp; &nbsp;Ask about each (default)</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;no&nbsp; &nbsp; Don&#39;t ask, don&#39;t send</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;auto&nbsp; Don&#39;t ask, just send</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;&ndash;Cgidirs+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Scan these CGI dirs: <q>none</q>, <q>all</q>, or values like <q>/cgi/ /cgi&ndash;a/</q></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;&ndash;config+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Use this config file</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp;&ndash;Display+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Turn on/off display outputs:</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1&nbsp; &nbsp; &nbsp;Show redirects</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2&nbsp; &nbsp; &nbsp;Show cookies received</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3&nbsp; &nbsp; &nbsp;Show all 200/OK responses</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;4&nbsp; &nbsp; &nbsp;Show URLs which require authentication</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;D&nbsp; &nbsp; &nbsp;Debug output</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;E&nbsp; &nbsp; &nbsp;Display all HTTP errors</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P&nbsp; &nbsp; &nbsp;Print progress to STDOUT</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;S&nbsp; &nbsp; &nbsp;Scrub output of IPs and hostnames</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;V&nbsp; &nbsp; &nbsp;Verbose output</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;-dbcheck&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Check database and other key files for syntax errors</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;-evasion+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Encoding technique:</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1&nbsp; &nbsp; &nbsp;Random URI encoding (non-UTF8)</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2&nbsp; &nbsp; &nbsp;Directory self&ndash;reference (/./)</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3&nbsp; &nbsp; &nbsp;Premature URL ending</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;4&nbsp; &nbsp; &nbsp;Prepend long random string</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;5&nbsp; &nbsp; &nbsp;Fake parameter</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;6&nbsp; &nbsp; &nbsp;TAB as request spacer</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;7&nbsp; &nbsp; &nbsp;Change the case of the URL</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;8&nbsp; &nbsp; &nbsp;Use Windows directory separator (\)</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;A&nbsp; &nbsp; &nbsp;Use a carriage return (0x0d) as a request spacer</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;B&nbsp; &nbsp; &nbsp;Use binary value 0x0b as a request spacer</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; -Format+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Save file (-o) format:</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;csv&nbsp; &nbsp;Comma-separated-value</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;htm&nbsp; &nbsp;HTML Format</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;nbe&nbsp; &nbsp;Nessus NBE format</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;sql&nbsp; &nbsp;Generic SQL (see docs for schema)</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;txt&nbsp; &nbsp;Plain text</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;xml&nbsp; &nbsp;XML Format</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(if not specified the format will be taken from the file extension passed to -output)</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;-Help&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Extended help information</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;-host+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Target host</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp;-404code&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Ignore these HTTP codes as negative responses (always). Format is "302,301".</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;-404string&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Ignore this string in response body content as negative response (always). Can be a regular expression.</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;-id+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Host authentication to use, format is id:pass or id:pass:realm</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;-key+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Client certificate key file</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;-list-plugins&nbsp; &nbsp; &nbsp; List all available plugins, perform no testing</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;-maxtime+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Maximum testing time per host (e.g., 1h, 60m, 3600s)</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;-mutate+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Guess additional file names:</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1&nbsp; &nbsp; &nbsp;Test all files with all root directories</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2&nbsp; &nbsp; &nbsp;Guess for password file names</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3&nbsp; &nbsp; &nbsp;Enumerate user names via Apache (/~user type requests)</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;4&nbsp; &nbsp; &nbsp;Enumerate user names via cgiwrap (/cgi-bin/cgiwrap/~user type requests)</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;5&nbsp; &nbsp; &nbsp;Attempt to brute force sub&ndash;domain names, assume that the host name is the parent domain</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;6&nbsp; &nbsp; &nbsp;Attempt to guess directory names from the supplied dictionary file</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;&ndash;mutate&ndash;options&nbsp; &nbsp; Provide information for mutates</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;-nointeractive&nbsp; &nbsp; &nbsp;Disables interactive features</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;&ndash;nolookup&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Disables DNS lookups</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;&ndash;nossl&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Disables the use of SSL</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;&ndash;no404&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Disables nikto attempting to guess a 404 page</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;&ndash;Option&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Over-ride an option in nikto.conf, can be issued multiple times</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;&ndash;output+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Write output to this file ('.' for auto-name)</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;-Pause+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Pause between tests (seconds, integer or float)</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;-Plugins+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; List of plugins to run (default: ALL)</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;-port+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Port to use (default 80)</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;-RSAcert+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Client certificate file</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;-root+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Prepend root value to all requests, format is /directory</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;-Save&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Save positive responses to this directory ('.' for auto-name)</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;-ssl&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Force ssl mode on port</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;-Tuning+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Scan tuning:</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1&nbsp; &nbsp; &nbsp;Interesting File / Seen in logs</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2&nbsp; &nbsp; &nbsp;Misconfiguration / Default File</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3&nbsp; &nbsp; &nbsp;Information Disclosure</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;4&nbsp; &nbsp; &nbsp;Injection (XSS/Script/HTML)</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;5&nbsp; &nbsp; &nbsp;Remote File Retrieval - Inside Web Root</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;6&nbsp; &nbsp; &nbsp;Denial of Service</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;7&nbsp; &nbsp; &nbsp;Remote File Retrieval - Server Wide</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;8&nbsp; &nbsp; &nbsp;Command Execution / Remote Shell</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;9&nbsp; &nbsp; &nbsp;SQL Injection</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0&nbsp; &nbsp; &nbsp;File Upload</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;a&nbsp; &nbsp; &nbsp;Authentication Bypass</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;b&nbsp; &nbsp; &nbsp;Software Identification</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;c&nbsp; &nbsp; &nbsp;Remote Source Inclusion</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;d&nbsp; &nbsp; &nbsp;WebService</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;e&nbsp; &nbsp; &nbsp;Administrative Console</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;x&nbsp; &nbsp; &nbsp;Reverse Tuning Options (i.e., include all except specified)</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;-timeout+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Timeout for requests (default 10 seconds)</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;-Userdbs&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Load only user databases, not the standard databases</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;all&nbsp; &nbsp;Disable standard dbs and load only user dbs</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;tests Disable only db_tests and load udb_tests</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;-useragent&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Over-rides the default useragent</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;-until&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Run until the specified time or duration</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;-update&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Update databases and plugins from CIRT.net</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;-useproxy&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Use the proxy defined in nikto.conf, or argument http://server:port</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp;-Version&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Print plugin and database versions</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;-vhost+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Virtual host (for Host header)</p>
+<p>&nbsp; &nbsp; &nbsp; + requires a value</p>
+<p><br /></p>
+
+<p>root@kali:~#</p>
+
+</code>
+</fieldset>
+
+<p><br /></p>
+
+
+<h2><p>Nikto Usage Example :</p></h2>
+
+<fieldset>
+
+<p>root@kali:~# nikto &ndash;Display 1234EP &ndash;o report.html &ndash;Format htm &ndash;Tuning 123bde &ndash;host 192.168.0.102</p>
+
+<p>&ndash; Nikto v2.1.6</p><p>---------------------------------------------------------------------------</p>
+
+<p>+ Target IP:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 192.168.0.102</p>
+
+<p>+ Target Hostname:&nbsp; &nbsp; 192.168.0.102</p>
+
+<p>+ Target Port:&nbsp; &nbsp; &nbsp; &nbsp; 80</p>
+<p>+ Start Time:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2018-03-23 10:49:04 (GMT0)</p>
+
+<p>---------------------------------------------------------------------------</p>
+
+<p>+ Server: Apache/2.2.22 (Ubuntu)</p><p>+ Server leaks inodes via ETags, header found with file /, inode: 287, size: 11832, mtime: Fri Feb&nbsp; 2 15:27:56 2018</p>
+<p>+ The anti-clickjacking X-Frame-Options header is not present.</p>
+<p>+ The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS</p>
+<p>+ The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type</p>
+
+<p>+ No CGI Directories found (use '-C all' to force check all possible dirs)</p>
+<p>+ "robots.txt" contains 1 entry which should be manually viewed.</p>
+<p>+ Uncommon header 'tcn' found, with contents: list</p>
+
+<p>+ Apache mod_negotiation is enabled with MultiViews, which allows attackers to easily brute force file names. See http://www.wisec.it/sectou.php?id=4698ebdc59d15. The following alternatives for 'index' were found: index.html</p>
+<p>+ Apache/2.2.22 appears to be outdated (current is at least Apache/2.4.12). Apache 2.0.65 (final release) and 2.2.29 are also current.</p>
+<p>+ Allowed HTTP Methods: GET, HEAD, POST, OPTIONS</p>
+
+<p>+ 371 requests: 0 error(s) and 9 item(s) reported on remote host</p>
+<p>+ End Time:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2018-03-23 10:50:44 (GMT0) (100 seconds)</p>
+<p>---------------------------------------------------------------------------</p>
+<p>+ 1 host(s) tested</p>
+
+<p>root@kali:~#</p>
+<p>root@kali:~# firefox report.html</p>
+
+</code>
+</fieldset>
+
+<p><br /></p>
+<p><br /></p>
+<p><n>See the <q><a href="https://cirt.net/nikto2-docs/"><b>Documentation</b></a></q> for a full list of features and how to use them. </n></p>
+
+<p><br /></p>
+<p><n>If you want video tutorial about Vulnerability Analysis using Nikto, <a href="https://youtu.be/AFJjWvQ3tss">Click Here</a>.</n></p>
+<p><br /></p>
+<p>Source : <a href="https://tools.kali.org/information-gathering/nikto">kali.org</a></p>
+<p><br /></p>
+
+
+</ul>
+
+
+
+ </div>
+  
+</ol>
+
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About us</h2>
+      <p>free ethical hacking course for an enthusiast to learn ethical hacking from beginner to intermediate, By <a href="https://techdogie.blogspot.com/">Techdogie</a> team.</p>
+    </div>
+    <div class="card">
+      <h3>Follow us</h3>
+      <p><a href="https://techdogie.blogspot.com/">Techdogie</a></p>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <h2> <a href="index.html">Home</a></h2>
+</div>
+</body>
+</html>

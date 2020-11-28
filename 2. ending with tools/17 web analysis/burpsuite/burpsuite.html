@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+fieldset {
+  background-color: #eeeeee;
+  width: 90%; 
+   font-size:14px;        
+    
+}
+r {
+  background-color: silver;
+  font-size: 19px;
+  width: 100%;
+   }
+n  {
+     font-size: 20px;
+     }
+code {
+	background-color: #eeeeee;
+        }
+* {
+  box-sizing: border-box;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+    font-family: 'Lexend Deca', sans-serif;
+  padding: 20px;
+  margin: 0;
+        width: 100%;
+        height: 20vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 2px;
+  font-size: xx-small;
+  text-align: center;
+  background: white;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+@-webkit-keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+    @keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  background: #ffffff;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+.frame-area {
+  display: block;
+  background: #f1f1f1;
+  width: 100%;  /* RESPONSIVE WIDTH */
+  max-width: auto;
+  height: 750px;
+  overflow: hidden;  /* EDIT TO hidden FOR NO SCROLLBAR */
+  border: #999999 1px solid;
+  margin: 0px;
+  padding: 0px;
+  }
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+
+  <a href="index.html"><img src="https://1.bp.blogspot.com/-tuZ2JeNu8TY/X2Gjn91qNQI/AAAAAAAAoQs/Yn_Ij5cLcp8qrFL1nPMipYGMXljXOmkBQCK4BGAYYCw/s1600/ronnie.png" class=" square responsive-img materialboxed"></a>
+
+</div>
+
+<div class="row">
+
+  <div class="leftcolumn" >
+
+
+
+
+
+
+
+<ol>
+
+
+	<center><h1>Burp Suite</h1></center>
+
+	<center><n>( The leading software for Web Security testing )</n></center>
+<br>
+
+<center><img src="img-burpsuite.png" height="300" width="500"/></center>
+
+
+<p><span style="white-space: pre;">	</span>Burp Suite is an integrated platform for performing security testing of web applications. Its various tools work seamlessly together to support the entire testing process, from initial mapping and analysis of an application&#39;s attack surface, through to finding and exploiting security vulnerabilities.</p>
+
+<p><span style="white-space: pre;">	</span>Burp gives you full control, letting you combine advanced manual techniques with state&ndash;of&ndash;the&ndash;art automation, to make your work faster, more effective, and more fun.</p>
+
+<p><br /></p>
+<p><h2>Features :</h2></p>
+
+<ul>
+
+<p><h3>1. Web vulnerability scanner :</h3></p>
+
+<ul>
+
+<p><li> Coverage of over 100 generic vulnerabilities, such as <a href="https://portswigger.net/web-security/sql-injection">SQL injection</a> and <a href="https://portswigger.net/web-security/cross-site-scripting">cross&ndash;site scripting (XSS)</a>, with great performance against all vulnerabilities in the OWASP top 10.</p>
+
+<p><li> Burp&#39;s cutting&ndash;edge web application crawler accurately maps content and functionality, automatically handling sessions, state changes, volatile content, and application logins.&nbsp;</p>
+</ul>
+
+<p><h3>2. Scheduled and repeat scans : </h3></p>
+<ul>
+<p><li> Burp Suite Enterprise Edition can perform scheduled scans at specific times, or carry out one&ndash;off scans on demand.</p>
+<p><li>You can configure repeat scans to run indefinitely or until a defined end point.&nbsp;</p>
+<p><li< You can view in a single place the entire scan history for a given web site.&nbsp;</p>
+</ul>
+
+<p><h3>3. Unlimited scalability :</h3></p>
+<ul>
+<p><li> Burp Suite Enterprise Edition has extreme scalability, and can scan indefinitely many web sites in parallel.&nbsp;</p>
+<p><li> You can configure all of your organization&#39;s web sites in one place, organized to reflect your organizational structure.&nbsp;</p>
+<p><li> All scan results are aggregated in one place, providing an at&ndash;a&ndash;glance view of your organization&#39;s security posture&nbsp;</p>
+</ul>
+
+<p><h3>4. CI integration :</h3></p>
+<ul>
+<p><li> Bring security automation forward in your development lifecycle using Burp&#39;s CI integration.&nbsp;</p>
+<p><li> Automatically launch vulnerability scans from your CI system via the REST API.&nbsp;</p>
+<p><li> There are ready&ndash;made native CI plugins for popular platforms such as Jenkins and TeamCity, and a generic CI driver that can be easily installed in any CI system.&nbsp;</p>
+</ul>
+
+<p><h3>5. Advanced manual tools :</h3></p>
+<ul>
+<p><li> Use Burp project files to save your work incrementally in real&ndash;time, and pick up seamlessly where you left off.&nbsp;</p>
+<p><li> Use the configuration library to quickly launch targeted scans with different settings.&nbsp;</p>
+<p><li> Use live scanning as you browse to fully control what actions are carried out for what requests.&nbsp;</p>
+</ul>
+
+<p><h3>6. Essential manual tools :</h3></p>
+<ul>
+<p><li> Burp Proxy allows manual testers to intercept all requests and responses between the browser and the target application, even when HTTPS is being used.</p>
+<p><li>You can view, edit or drop individual messages to manipulate the server&ndash;side or client&ndash;side components of the application.</p>
+<p><li> The Proxy history records full details of all requests and responses passing through the Proxy.&nbsp;</p>
+<br>
+
+
+</ul>
+<p>If you want more informations about all these <n>features</n>, <a href="https://portswigger.net/burp"><n>Click Here</n></a></p>
+</ul>
+
+<br><br>
+
+<p><h2>Download Link :</h2> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://portswigger.net/burp/communitydownload"><n>Click Here</n></a></p>
+
+<p><b><big>Downloading and Installing guide</b> for Burp Suite,</big> <a href="https://portswigger.net/burp/documentation/desktop/getting-started/installing-burp"><n>Click Here</n></a></p>
+<p><br /></p>
+
+<p><n>How to use Burp Suite for Penetration Testing,</n></p>
+<p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://portswigger.net/burp/documentation/desktop/penetration-testing"><n>Click Here</n></a></p>
+<p><br /></p>
+<p><big>If you want any <n>Support</n>, please </big><a href="https://portswigger.net/support"><n>Click Here</n></a></p>
+<p><br /></p>
+<p>Source : <a href="https://portswigger.net/">portswigger.net</a></p>
+
+
+
+
+
+</ol>
+
+
+ </div>
+  
+
+
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About us</h2>
+      <p>free ethical hacking course for an enthusiast to learn ethical hacking from beginner to intermediate, By <a href="https://techdogie.blogspot.com/">Techdogie</a> team.</p>
+    </div>
+    <div class="card">
+      <h3>Follow us</h3>
+      <p><a href="https://techdogie.blogspot.com/">Techdogie</a></p>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <h2> <a href="index.html">Home</a></h2>
+</div>
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+fieldset {
+  background-color: #eeeeee;
+  width: 90%; 
+   font-size:14px;       
+    
+}
+r {
+  background-color: silver;
+  font-size: 19px;
+  width: 100%;
+   }
+n  {
+     font-size: 20px;
+     }
+code {
+	background-color: #eeeeee;
+          }
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+    font-family: 'Lexend Deca', sans-serif;
+  padding: 20px;
+  margin: 0;
+        width: 100%;
+        height: 20vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 2px;
+  font-size: xx-small;
+  text-align: center;
+  background: white;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+@-webkit-keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+    @keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  background: #ffffff;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+.frame-area {
+  display: block;
+  background: #f1f1f1;
+  width: 100%;  /* RESPONSIVE WIDTH */
+  max-width: auto;
+  height: 750px;
+  overflow: hidden;  /* EDIT TO hidden FOR NO SCROLLBAR */
+  border: #999999 1px solid;
+  margin: 0px;
+  padding: 0px;
+  }
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a href="index.html"><img src="https://1.bp.blogspot.com/-tuZ2JeNu8TY/X2Gjn91qNQI/AAAAAAAAoQs/Yn_Ij5cLcp8qrFL1nPMipYGMXljXOmkBQCK4BGAYYCw/s1600/ronnie.png" class=" square responsive-img materialboxed"></a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn" >
+    <p style="text-align:justify">
+<ul>
+
+	<center><h1>Ghost Phisher</h1></center>
+	<center><img src="img-ghost.jpg" height="700" width="800" class=" square responsive-img materialboxed "/></center>
+<br>
+
+	<p><span style="white-space: pre;">	</span>Ghost Phisher is a Wireless and Ethernet security auditing and attack software program written using the <a href="https://www.python.org/">Python Programming Language</a> and the <a href="https://riverbankcomputing.com/software/pyqt/intro">Python Qt GUI library</a>, the program is able to emulate access points and deploy various internal networking servers for networking, penetration testing and phishing attacks.</p>
+
+<br>
+	<h2>Features :</h2>
+	<p>&emsp;Ghost Phisher currently supports the following features :</p>
+	<ol><ol>
+	<p><li>HTTP Server</p>
+
+	<p><li>Inbuilt RFC 1035 DNS Server</p>
+
+	<p><li>Inbuilt RFC 2131 DHCP Server</p>
+
+	<p><li>Webpage Hosting and Credential Logger (Phishing)</p>
+
+	<p><li>Wifi Access point Emulator</p>
+
+	<p><li>Session Hijacking (Passive and Ethernet Modes)</p>
+
+	<p><li>ARP Cache Poisoning (MITM and DOS Attacks)</p>
+
+	<p><li>Penetration using Metasploit Bindings</p>
+	
+	<p><li>Automatic credential logging using SQlite Database</p>
+	
+	<p><li>Update Support </p>
+	</ol></ol>
+	
+<br>
+
+	<h3>Operating System Supported :</h3>
+	
+	<p><span style="white-space: pre;">	</span>The Software runs on any Linux machine with the programs <a href="https://github.com/savio-code/ghost-phisher#prerequisites">prerequisites</a>, But the program has been tested on the following Linux based operating systems:<br><br>
+
+	<ol><ol>
+	<p><li><a href="https://ubuntu.com/">Ubuntu KDE/GNOME</a></p>
+	<p><li><a href="https://www.backtrack-linux.org/">BackTrack Linux</a> (now is <a href="https://www.kali.org/">Kali Linux</a>)</p>
+	<p><li><a href="https://www.backbox.org/">BackBox Linux</a></p>
+	</ol></ol>
+
+<br>
+
+	<h3>Prerequisites :</h3>
+	
+	<p><span style="white-space: pre;">	</span>The Program requires the following to run properly :</p>
+	<p><span style="white-space: pre;">	</span>The following dependencies can be installed using the Debian package installer command on Debian based systems using <r><n>&nbsp;apt&ndash;get install program </n></r>  or otherwise downloaded and installed manually : </p>
+	<ol><ol>
+	<p><li><a href="http://www.aircrack-ng.org/">Aircrack&ndash;NG</a></p>
+
+	<p><li><a href="https://scapy.net/">Python&ndash;Scapy</a></p>
+
+	<p><li><a href="https://riverbankcomputing.com/software/pyqt/intro">Python Qt4</a></p>
+
+	<p><li><a href="https://www.python.org/">Python</a></p>
+
+	<p><li><a href="http://subversion.tigris.org/">Subversion</a></p>
+	
+	<p><li><a href="https://invisible-island.net/xterm/">Xterm</a></p>
+	
+	<p><li><a href="https://www.metasploit.com/">Metasploit Framework</a> (Optional)</p>
+
+	</ol></ol>
+
+	<h2>Installation :</h2>
+	<p>&emsp;&emsp;Installation on Debian Package</p>
+
+	<p>&emsp;&emsp;&emsp;Run the below command :</p>
+
+		&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<code> root@host:~# dpkg &ndash;i ghost&ndash;phisher&#95;1.5&#95;all.deb&nbsp;</code>
+
+	<br><br>
+	<p>&emsp;&emsp;&emsp;The source code for the program can be fetched using the following command on terminal :</p>
+	
+		
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<code> root@host:~# svn checkout <a href="http://ghost-phisher.googlecode.com/svn/Ghost-Phisher/" rel="nofollow">http://ghost&ndash;phisher.googlecode.com/svn/Ghost&ndash;Phisher/</a>&nbsp;</code><p></p>
+
+
+<br>
+	<h2>Download Link :</h2> 
+	<p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/savio-code/downloads/raw/master/Ghost-Phisher_1.6_all.deb"><n>Click Here<n/></a></p><br>
+	
+	<n>If you want a simple Video about Ghost Phisher :</n> <a href="https://youtu.be/7WqO2Rw9sOg"><n>Click here</n></a><br>
+	
+<br><br>
+	
+	Source : <a href="https://github.com/savio-code/ghost-phisher#prerequisites">Click here</a>
+	</ul>
+	</p>
+    
+  </div>
+  
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About us</h2>
+      <p>free ethical hacking course for an enthusiast to learn ethical hacking from begginner to intermediate, By <a href="https://techdogie.blogspot.com/">Techdogie</a> team.</p>
+    </div>
+    <div class="card">
+      <h3>Follow us</h3>
+      <p><a href="https://techdogie.blogspot.com/">Techdogie</a></p>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <h2> <a href="index.html">Home</a></h2>
+</div>
+</body>
+</html>

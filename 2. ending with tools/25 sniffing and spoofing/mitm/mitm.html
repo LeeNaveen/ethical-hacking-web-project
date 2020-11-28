@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+fieldset {
+  background-color: #eeeeee;
+  width: 90%; 
+   font-size:14px;       
+    
+}
+r {
+  background-color: silver;
+  font-size: 19px;
+  width: 100%;
+   }
+n  {
+     font-size: 20px;
+     }
+code {
+	background-color: #eeeeee;
+          }
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+    font-family: 'Lexend Deca', sans-serif;
+  padding: 20px;
+  margin: 0;
+        width: 100%;
+        height: 20vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 2px;
+  font-size: xx-small;
+  text-align: center;
+  background: white;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+@-webkit-keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+    @keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  background: #ffffff;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+.frame-area {
+  display: block;
+  background: #f1f1f1;
+  width: 100%;  /* RESPONSIVE WIDTH */
+  max-width: auto;
+  height: 750px;
+  overflow: hidden;  /* EDIT TO hidden FOR NO SCROLLBAR */
+  border: #999999 1px solid;
+  margin: 0px;
+  padding: 0px;
+  }
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a href="index.html"><img src="https://1.bp.blogspot.com/-tuZ2JeNu8TY/X2Gjn91qNQI/AAAAAAAAoQs/Yn_Ij5cLcp8qrFL1nPMipYGMXljXOmkBQCK4BGAYYCw/s1600/ronnie.png" class=" square responsive-img materialboxed"></a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn" >
+
+<ul>
+
+
+
+
+
+
+	<center><h1>Man&ndash;in&ndash;the&ndash;Middle (MITM) Attack</h1></center>
+	<center><img src="img-mitm.png" height="400" width="600"/></center>
+	
+
+<br>
+<h2>What Is a Man&ndash;in&ndash;the&ndash;Middle Attack?</h2>
+
+	<p><span style="white-space: pre;">	</span>A man&ndash;in&ndash;the&ndash;middle attack is a type of cyberattack where a malicious actor inserts him/herself into a conversation between two parties, impersonates both parties and gains access to information that the two parties were trying to send to each other. A man&ndash;in&ndash;the&ndash;middle attack allows a malicious actor to intercept, send and receive data meant for someone else, or not meant to be sent at all, without either outside party knowing until it is too late. Man&ndash;in&ndash;the&ndash;middle attacks can be abbreviated in many ways, including MITM, MitM, MiM or MIM.</p>
+
+	<p><span style="white-space: pre;">	</span>A man&ndash;in&ndash;the&ndash;middle attack requires three players. There&#39;s the victim, the entity with which the victim is trying to communicate, and the <q>man in the middle</q>, who&#39;s intercepting the victim&#39;s communications. Critical to the scenario is that the victim isn&#39;t aware of the man in the middle.</p>
+
+<br>
+
+<h2>How does a man&ndash;in&ndash;the&ndash;middle attack work?</h2>
+
+	<p><span style="white-space: pre;">	</span>How does this play out? Let&#39;s say you received an email that appeared to be from your bank, asking you to log in to your account to confirm your contact information. You click on a link in the email and are taken to what appears to be your bank&#39;s website, where you log in and perform the requested task.</p>
+
+	<p><span style="white-space: pre;">	</span>In such a scenario, the man in the middle (MITM) sent you the email, making it appear to be legitimate. (This attack also involves phishing, getting you to click on the email appearing to come from your bank.) He also created a website that looks just like your bank&#39;s website, so you wouldn&#39;t hesitate to enter your login credentials after clicking the link in the email. But when you do that, you&#39;re not logging into your bank account, you&#39;re handing over your credentials to the attacker.</p>
+
+<br>
+
+<h2>MITM attacks: Close to you or with malware</h2>
+
+	<p><span style="white-space: pre;">	</span>Man&ndash;in&ndash;the&ndash;middle attacks come in two forms, one that involves physical proximity to the intended target, and another that involves malicious software, or malware. This second form, like our fake bank example above, is also called a man&ndash;in&ndash;the&ndash;browser attack.</p>
+
+	<p><span style="white-space: pre;">	</span>Cybercriminals typically execute a man&ndash;in&ndash;the&ndash;middle attack in two phases &mdash; interception and decryption.</p>
+
+	<p><span style="white-space: pre;">	</span>With a traditional MITM attack, the cybercriminal needs to gain access to an unsecured or poorly secured Wi&ndash;Fi router. These types of connections are generally found in public areas with free Wi&ndash;Fi hotspots, and even in some people&#39;s homes, if they haven&#39;t protected their network. Attackers can scan the router looking for specific vulnerabilities such as a weak password.</p>
+
+	<p><span style="white-space: pre;">	</span>Once attackers find a vulnerable router, they can deploy tools to intercept and read the victim&#39;s transmitted data. The attacker can then also insert their tools between the victim&#39;s computer and the websites the user visits to capture log in credentials, banking information, and other personal information.</p>
+
+	<p><span style="white-space: pre;">	</span>A successful man&ndash;in&ndash;the&ndash;middle attack does not stop at interception. The victim&#39;s encrypted data must then be unencrypted, so that the attacker can read and act upon it.</p>
+
+<br>
+	<center><img src="img1-mitm.png" height="400" width="600"/></center>
+
+<h2>What is a man&ndash;in&ndash;the&ndash;browser attack?</h2>
+
+	<p><span style="white-space: pre;">	</span>With a man&ndash;in&ndash;the&ndash;browser attack (MITB), an attacker needs a way to inject malicious software, or malware, into the victim&#39;s computer or mobile device. One of the ways this can be achieved is by phishing.</p>
+
+	<p><span style="white-space: pre;">	</span>Phishing is when a fraudster sends an email or text message to a user that appears to originate from trusted source, such as a bank, as in our original example. By clicking on a link or opening an attachment in the phishing message, the user can unwittingly load malware onto their device.</p>
+
+	<p><span style="white-space: pre;">	</span>The malware then installs itself on the browser without the user&#39;s knowledge. The malware records the data sent between the victim and specific targeted websites, such as financial institutions, and transmits it to the attacker.</p>
+
+<br>
+
+<h2>Types of man&ndash;in&ndash;the&ndash;middle attacks :</h2>
+
+  <p>&nbsp;&nbsp;&nbsp;Cybercriminals can use MITM attacks to gain control of devices in a variety of ways.</p>
+
+<ol>
+
+<h3><li> IP spoofing :</h3>
+
+	<p><span style="white-space: pre;">	</span>Every device capable of connecting to the internet has an internet protocol (IP) address, which is similar to the street address for your home. By spoofing an IP address, an attacker can trick you into thinking you&#39;re interacting with a website or someone you&#39;re not, perhaps giving the attacker access to information you&#39;d otherwise not share.</p>
+
+<h3><li> DNS spoofing :</h3>
+
+	<p><span style="white-space: pre;">	</span>Domain Name Server, or DNS, spoofing is a technique that forces a user to a fake website rather than the real one the user intends to visit. If you are a victim of DNS spoofing, you may think you&#39;re visiting a safe, trusted website when you&#39;re actually interacting with a fraudster. The perpetrator&#39;s goal is to divert traffic from the real site or capture user login credentials.</p>
+
+<h3><li> HTTPS spoofing :</h3>
+
+	<p><span style="white-space: pre;">	</span>When doing business on the internet, seeing <q>HTTPS</q> in the URL, rather than <q>HTTP</q> is a sign that the website is secure and can be trusted. In fact, the <q>S</q> stands for <q>secure</q>. An attacker can fool your browser into believing it&#39;s visiting a trusted website when it&#39;s not. By redirecting your browser to an unsecure website, the attacker can monitor your interactions with that website and possibly steal personal information you&#39;re sharing.</p>
+
+<h3><li> SSL hijacking :</h3>
+
+	<p><span style="white-space: pre;">	</span>When your device connects to an unsecure server &mdash; indicated by <q>HTTP</q> &mdash; the server can often automatically redirect you to the secure version of the server, indicated by <q>HTTPS</q>. A connection to a secure server means standard security protocols are in place, protecting the data you share with that server. SSL stands for Secure Sockets Layer, a protocol that establishes encrypted links between your browser and the web server.</p>
+
+	<p><span style="white-space: pre;">	</span>In an SSL hijacking, the attacker uses another computer and secure server and intercepts all the information passing between the server and the user&#39;s computer.</p>
+
+<h3><li> Email hijacking :</h3>
+
+	<p><span style="white-space: pre;">	</span>Cybercriminals sometimes target email accounts of banks and other financial institutions. Once they gain access, they can monitor transactions between the institution and its customers. The attackers can then spoof the bank&#39;s email address and send their own instructions to customers. This convinces the customer to follow the attackers&#39; instructions rather than the bank&#39;s. As a result, an unwitting customer may end up putting money in the attackers&#39; hands.</p>
+
+<h3><li> Wi&ndash;Fi eavesdropping :</h3>
+
+	<p><span style="white-space: pre;">	</span>Cybercriminals can set up Wi&ndash;Fi connections with very legitimate sounding names, similar to a nearby business. Once a user connects to the fraudster&#39;s Wi&ndash;Fi, the attacker will be able to monitor the user&#39;s online activity and be able to intercept login credentials, payment card information, and more. This is just one of several risks associated with using public Wi&ndash;Fi.</p>
+
+<h3><li> Stealing browser cookies :</h3>
+
+	<p><span style="white-space: pre;">	</span>To understand the risk of stolen browser cookies, you need to understand what one is. A browser cookie is a small piece of information a website stores on your computer.</p>
+
+	<p><span style="white-space: pre;">	</span>For example, an online retailer might store the personal information you enter and shopping cart items you&#39;ve selected on a cookie so you don&#39;t have to re&ndash;enter that information when you return.</p>
+
+	<p><span style="white-space: pre;">	</span>A cybercriminal can hijack these browser cookies. Since cookies store information from your browsing session, attackers can gain access to your passwords, address, and other sensitive information.</p>
+
+</ol>
+<br>
+
+<h2>How to help protect against a man&ndash;in&ndash;the&ndash;middle attack</h2>
+
+  <p>&nbsp;&nbsp;&nbsp;With the amount of tools readily available to cybercriminals for carrying out man&ndash;in&ndash;the&ndash;middle attacks, it makes sense to take steps to help protect your devices, your data, and your connections. Here are just a few.</p>
+
+<ul style="list-style-type: disc">
+
+    <p><li> Make sure <q>HTTPS</q> &mdash; with the S &mdash; is always in the URL bar of the websites you visit.</p>
+    <p><li> Be wary of potential phishing emails from attackers asking you to update your password or any other login credentials. Instead of clicking on the link provided in the email, manually type the website address into your browser.</p>
+    <p><li> Never connect to public Wi&ndash;Fi routers directly, if possible. A VPN encrypts your internet connection on public hotspots to protect the private data you send and receive while using public Wi&ndash;Fi, like passwords or credit card information.</p>
+    <p><li> Since MITB attacks primarily use malware for execution, you should install a comprehensive internet security solution, such as Norton Security, on your computer. Always keep the security software up to date.</p>
+    <p><li> Be sure that your home Wi&ndash;Fi network is secure. Update all of the default usernames and passwords on your home router and all connected devices to strong, unique passwords. </p>
+
+</ul>
+
+<br><br>
+
+<n>If you want Video about Man&ndash;in&ndash;the&ndash;Middle Public Wi&ndash;Fi Hacking Demo :</n> <a href="https://youtu.be/wBVAZiaCda4"><n>Click Here</n></a>
+
+<br><br><br>
+
+Source : <a href="https://us.norton.com/internetsecurity-wifi-what-is-a-man-in-the-middle-attack.html">us.norton.com</a>
+
+
+
+</ul>
+	
+    
+  </div>
+  
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About us</h2>
+      <p>free ethical hacking course for an enthusiast to learn ethical hacking from begginner to intermediate, By <a href="https://techdogie.blogspot.com/">Techdogie</a> team.</p>
+    </div>
+    <div class="card">
+      <h3>Follow us</h3>
+      <p><a href="https://techdogie.blogspot.com/">Techdogie</a></p>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <h2> <a href="index.html">Home</a></h2>
+</div>
+</body>
+</html>

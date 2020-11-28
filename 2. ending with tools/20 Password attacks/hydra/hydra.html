@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+fieldset {
+  background-color: #eeeeee;
+  width: 90%; 
+   font-size:14px;       
+    
+}
+r {
+  background-color: silver;
+  font-size: 19px;
+  width: 100%;
+   }
+n  {
+     font-size: 20px;
+     }
+code {
+	background-color: #eeeeee;
+         }
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+    font-family: 'Lexend Deca', sans-serif;
+  padding: 20px;
+  margin: 0;
+        width: 100%;
+        height: 20vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 2px;
+  font-size: xx-small;
+  text-align: center;
+  background: white;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+@-webkit-keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+    @keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  background: #ffffff;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+.frame-area {
+  display: block;
+  background: #f1f1f1;
+  width: 100%;  /* RESPONSIVE WIDTH */
+  max-width: auto;
+  height: 750px;
+  overflow: hidden;  /* EDIT TO hidden FOR NO SCROLLBAR */
+  border: #999999 1px solid;
+  margin: 0px;
+  padding: 0px;
+  }
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a href="index.html"><img src="https://1.bp.blogspot.com/-tuZ2JeNu8TY/X2Gjn91qNQI/AAAAAAAAoQs/Yn_Ij5cLcp8qrFL1nPMipYGMXljXOmkBQCK4BGAYYCw/s1600/ronnie.png" class=" square responsive-img materialboxed"></a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn" >
+	
+<ul>
+
+
+	<center><h1>Hydra</h1></center>
+	<center><img src="img-hydra.jpg" height="400" width="600"/></center><br>
+
+	<p><span style="white-space: pre;">	</span>Hydra is a parallelized login cracker which supports numerous protocols to attack. It is very fast and flexible, and new modules are easy to add. This tool makes it possible for researchers and security consultants to show how easy it would be to gain unauthorized access to a system remotely.</p><br>
+
+<h2>Hydra Supports :</h2>
+	 <p><span style="white-space: pre;">	</span>Cisco AAA, Cisco auth, Cisco enable, CVS, FTP, HTTP(S)&ndash;FORM&ndash;GET, HTTP(S)&ndash;FORM&ndash;POST, HTTP(S)&ndash;GET, HTTP(S)&ndash;HEAD, HTTP&ndash;Proxy, ICQ, IMAP, IRC, LDAP, MS&ndash;SQL, MySQL, NNTP, Oracle Listener, Oracle SID, PC&ndash;Anywhere, PC&ndash;NFS, POP3, PostgreSQL, RDP, Rexec, Rlogin, Rsh, SIP, SMB(NT), SMTP, SMTP Enum, SNMP v1&plus;v2&plus;v3, SOCKS5, SSH (v1 and v2), SSHKEY, Subversion, Teamspeak (TS2), Telnet, VMware&ndash;Auth, VNC and XMPP.</p>
+<br>
+
+<h2>Tools included in the hydra package :</h2>
+
+	<p>&emsp;&emsp;<n>hydra &ndash; Very fast network logon cracker :</n></p>
+
+<fieldset>
+<code>
+
+<p>root@kali:~# hydra &ndash;h</p>
+<p>Hydra v7.6 (c)2013 by van Hauser/THC & David Maciejak - for legal purposes only</p>
+<br>
+<p>Syntax: hydra [[[-l LOGIN|-L FILE] [-p PASS|-P FILE]] | [-C FILE]] [-e nsr] [-o FILE] [-t TASKS] [-M FILE [-T TASKS]] [-w TIME] [-W TIME] [-f] [-s PORT] [-x MIN:MAX:CHARSET] [-SuvV46] [service://server[:PORT][/OPT]]</p>
+<br>
+<p>Options:</p>
+  <p>&ensp;-R        restore a previous aborted/crashed session</p>
+  <p>&ensp;-S        perform an SSL connect</p>
+  <p>&ensp;-s PORT   if the service is on a different default port, define it here</p>
+  <p>&ensp;-l LOGIN or -L FILE  login with LOGIN name, or load several logins from FILE</p>
+  <p>&ensp;-p PASS  or -P FILE  try password PASS, or load several passwords from FILE</p>
+  <p>&ensp;-x MIN:MAX:CHARSET  password bruteforce generation, type "-x -h" to get help</p>
+  <p>&ensp;-e nsr    try "n" null password, "s" login as pass and/or "r" reversed login</p>
+  <p>&ensp;-u        loop around users, not passwords (effective! implied with -x)</p>
+  <p>&ensp;-C FILE   colon separated "login:pass" format, instead of -L/-P options</p>
+  <p>&ensp;-M FILE   list of servers to be attacked in parallel, one entry per line</p>
+  <p>&ensp;-o FILE   write found login/password pairs to FILE instead of stdout</p>
+  <p>&ensp;-f / -F   exit when a login/pass pair is found (-M: -f per host, -F global)</p>
+  <p>&ensp;-t TASKS  run TASKS number of connects in parallel (per host, default: 16)</p>
+  <p>&ensp;-w / -W TIME  waittime for responses (32s) / between connects per thread</p>
+  <p>&ensp;-4 / -6   prefer IPv4 (default) or IPv6 addresses</p>
+  <p>&ensp;-v / -V / -d  verbose mode / show login+pass for each attempt / debug mode</p>
+  <p>&ensp;-U        service module usage details</p>
+  <p>&ensp;server    the target server (use either this OR the -M option)</p>
+  <p>&ensp;service   the service to crack (see below for supported protocols)</p>
+  <p>&ensp;OPT       some service modules support additional input (-U for module help)</p>
+<br>
+<p>Supported services: asterisk afp cisco cisco-enable cvs firebird ftp ftps http[s]-{head|get} http[s]-{get|post}-form http-proxy http-proxy-urlenum icq imap[s] irc ldap2[s] ldap3[-{cram|digest}md5][s] mssql mysql ncp nntp oracle-listener oracle-sid pcanywhere pcnfs pop3[s] postgres rdp rexec rlogin rsh s7-300 sip smb smtp[s] smtp-enum snmp socks5 ssh sshkey svn teamspeak telnet[s] vmauthd vnc xmpp</p>
+<br>
+<p>Hydra is a tool to guess/crack valid login/password pairs - usage only allowed</p>
+<p>for legal purposes. This tool is licensed under AGPL v3.0.</p>
+<p>The newest version is always available at http://www.thc.org/thc-hydra</p>
+<p>These services were not compiled in: sapr3 oracle.</p>
+<br>
+<p>Use HYDRA_PROXY_HTTP or HYDRA_PROXY - and if needed HYDRA_PROXY_AUTH - environment for a proxy setup.</p>
+<p>E.g.:  % export HYDRA_PROXY = socks5://127.0.0.1:9150 (or socks4:// or connect://)</p>
+       <p>&emsp;&emsp;&ensp;% export HYDRA_PROXY_HTTP = http://proxy:8080</p>
+       <p>&emsp;&emsp;&ensp;% export HYDRA_PROXY_AUTH = user:pass</p><br>
+
+<p>Examples:</p>
+  <p>&ensp;hydra -l user -P passlist.txt ftp://192.168.0.1</p>
+  <p>&ensp;hydra -L userlist.txt -p defaultpw imap://192.168.0.1/PLAIN</p>
+  <p>&ensp;hydra -C defaults.txt -6 pop3s:// [fe80::2c:31ff:fe12:ac11] : 143/TLS:DIGEST-MD5</p>
+
+</code>
+</fieldset>
+
+<br>
+	<p>&emsp;&emsp;<n>pw&ndash;inspector &ndash; Reads passwords in and prints those which meet the requirements :</n></p>
+
+<fieldset>
+<code>
+
+<p>root@kali:~# pw&ndash;inspector</p>
+<p>PW&ndash;Inspector v0.2 (c) 2005 by van Hauser / THC vh@thc.org [http://www.thc.org]</p>
+<br><p>
+Syntax: pw&ndash;inspector [-i FILE] [-o FILE] [-m MINLEN] [-M MAXLEN] [-c MINSETS] -l -u -n -p -s
+</p><br>
+<p>Options:</p>
+  <p>&ensp;-i FILE    file to read passwords from (default: stdin)</p>
+  <p>&ensp;-o FILE    file to write valid passwords to (default: stdout)</p>
+  <p>&ensp;-m MINLEN  minimum length of a valid password</p>
+  <p>&ensp;-M MAXLEN  maximum length of a valid password</p>
+  <p>&ensp;-c MINSETS the minimum number of sets required (default: all given)</p>
+<p>Sets:</p>
+  <p>&ensp;-l         lowcase characters (a,b,c,d, etc.)</p>
+  <p>&ensp;-u         upcase characters (A,B,C,D, etc.)</p>
+  <p>&ensp;-n         numbers (1,2,3,4, etc.)</p>
+  <p>&ensp;-p         printable characters (which are not -l/-n/-p, e.g. $,!,/,(,*, etc.)</p>
+  <p>&ensp;-s         special characters - all others not withint the sets above</p>
+<br>
+<p>PW-Inspector reads passwords in and prints those which meet the requirements.</p>
+<p>The return code is the number of valid passwords found, 0 if none was found.</p>
+<p>Use for security: check passwords, if 0 is returned, reject password choice.</p>
+<p>Use for hacking: trim your dictionary file to the pw requirements of the target.</p>
+<p>Usage only allowed for legal purposes.</p>
+
+</code>
+</fieldset>
+
+<br>
+
+<h3>Hydra Usage Example :</h3>
+
+	<p>&emsp;&emsp;Attempt to login as the root user (<n>&ndash;l root</n>) using a password list (<n>&ndash;P /home/kali/passwords.txt</n>) with 6 threads (<n>&ndash;t 6</n>) on the given SSH server (<n>ssh://192.168.1.123</n>) :</p>
+
+<fieldset>
+<code>
+
+<p>root@kali:~# hydra &ndash;l root &ndash;P /home/kali/passwords.txt &ndash;t 6 ssh://192.168.1.123</p>
+<p>Hydra v7.6 (c)2013 by van Hauser/THC & David Maciejak &ndash; for legal purposes only</p><br>
+
+<p>Hydra (http://www.thc.org/thc-hydra) starting at 2014-05-19 07:53:33</p>
+<p>[DATA] 6 tasks, 1 server, 1003 login tries (l:1/p:1003), ~167 tries per task</p>
+<p>[DATA] attacking service ssh on port 22</p>
+
+</code>
+</fieldset>
+
+<br>
+
+<h3>pw&ndash;inspector Usage Example :</h3>
+
+	<p>&emsp;&emsp;Read in a list of passwords (<n>&ndash;i /usr/share/wordlists/nmap.lst</n>) and save to a file (<n>&ndash;o /root/passes.txt</n>), selecting passwords of a minimum length of 6 (<n>&ndash;m 6</n>) and a maximum length of 10 (<n>&ndash;M 10</n>) :</p>
+
+<fieldset>
+<code>
+
+<p>root@kali:~# pw-inspector &ndash;i /usr/share/wordlists/nmap.lst &ndash;o /root/passes.txt &ndash;m 6 &ndash;M 10</p>
+<p>root@kali:~# wc &ndash;l /usr/share/wordlists/nmap.lst</p>
+<p>5086 /usr/share/wordlists/nmap.lst</p>
+<p>root@kali:~# wc &ndash;l /root/passes.txt</p>
+<p>4490 /root/passes.txt</p>
+
+</code>
+</fieldset>
+
+<br>
+
+<p><n>Comprehensive Guide on Hydra :</n> <a href="https://www.hackingarticles.in/comprehensive-guide-on-hydra-a-brute-forcing-tool/"><n>Click Here</n></a></p>
+
+<p><n>If you want Video about Hydra :</n> <a href="https://youtu.be/kvTdS7dCsbM"><n>Click Here</n></a></p>
+<br><br>
+Source : <a href="https://tools.kali.org/password-attacks/hydra">kali.org</a>
+
+
+
+</ul>
+  </div>
+  
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About us</h2>
+      <p>free ethical hacking course for an enthusiast to learn ethical hacking from begginner to intermediate, By <a href="https://techdogie.blogspot.com/">Techdogie</a> team.</p>
+    </div>
+    <div class="card">
+      <h3>Follow us</h3>
+      <p><a href="https://techdogie.blogspot.com/">Techdogie</a></p>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <h2> <a href="index.html">Home</a></h2>
+</div>
+</body>
+</html>

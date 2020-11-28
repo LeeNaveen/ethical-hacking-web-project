@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+fieldset {
+  background-color: #eeeeee;
+  width: 90%; 
+   font-size:14px;        
+    
+}
+r {
+  background-color: silver;
+  font-size: 19px;
+  width: 100%;
+   }
+n  {
+     font-size: 20px;
+     }
+code {
+	background-color: #eeeeee;
+          }
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+    font-family: 'Lexend Deca', sans-serif;
+  padding: 20px;
+  margin: 0;
+        width: 100%;
+        height: 20vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 2px;
+  font-size: xx-small;
+  text-align: center;
+  background: white;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+@-webkit-keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+    @keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  background: #ffffff;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+.frame-area {
+  display: block;
+  background: #f1f1f1;
+  width: 100%;  /* RESPONSIVE WIDTH */
+  max-width: auto;
+  height: 750px;
+  overflow: hidden;  /* EDIT TO hidden FOR NO SCROLLBAR */
+  border: #999999 1px solid;
+  margin: 0px;
+  padding: 0px;
+  }
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a href="index.html"><img src="https://1.bp.blogspot.com/-tuZ2JeNu8TY/X2Gjn91qNQI/AAAAAAAAoQs/Yn_Ij5cLcp8qrFL1nPMipYGMXljXOmkBQCK4BGAYYCw/s1600/ronnie.png" class=" square responsive-img materialboxed"></a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn" >
+
+<ul>
+	<center><h1>Crunch</h1></center>
+
+    <center><img src="img-crunch.jpg" height="300" width="500"/></center><br>
+	
+
+
+	<p><span style="white-space: pre;">	</span>Crunch is a wordlist generator where you can specify a standard character set or a character set you specify. crunch can generate all possible combinations and permutations.</p>
+
+<br>
+	<h2>Features:</h2>
+
+	<ul style="list-style-type: disc">
+	<p><li>Crunch generates wordlists in both combination and permutation ways</p>
+	<p><li>It can breakup output by number of lines or file size</p>
+	<p><li>Resume support</p>
+	<p><li>Pattern now supports number and symbols</p>
+	<p><li>Pattern now supports upper and lower case characters separately</p>
+	<p><li>Adds a status report when generating multiple files</p>
+	<p><li>New &ndash;l option for literal support of &commat;,%^</p>
+	<p><li>New &ndash;d option to limit duplicate characters see man file for details</p>
+	<p><li>Unicode support </p>
+	</ul>
+
+<br>
+	<h2>Tools included in the Crunch package :</h2>
+	<p>&emsp;Crunch &ndash; Create a wordlist based on criteria you specify</p>
+	
+	<fieldset>
+	<code>
+
+	<p>root@kali:~# crunch<br>
+	crunch version 3.6<br><br>
+	
+	<p>Crunch can create a wordlist based on criteria you specify.  The output from crunch can be sent to the screen, file, or to another program.<br><br>
+	
+	Usage: crunch <min> <max> [options]<br>
+	where min and max are numbers<br><br>
+	
+	Please refer to the man page for instructions and examples on how to use crunch.</p>
+
+	</code>
+	</fieldset>
+	
+	
+	<h3>Crunch Usage Example :</h3>
+	
+	<p>&emsp;Generate a dictionary file containing words with a minimum and maximum length of 6 (<n>6 6</n>) using the given characters (<n>0123456789abcdef</n>), saving the output to a file (<n>&ndash;0 6chars.txt</n>) :</p>
+	
+	<fieldset>
+	<code>
+
+	<p>root@kali:~# crunch 6 6 0123456789abcdef &ndash;o 6chars.txt<br>
+	Crunch will now generate the following amount of data: 117440512 bytes<br>
+	112 MB<br>
+	0 GB<br>
+	0 TB<br>
+	0 PB<br>
+	Crunch will now generate the following number of lines: 16777216</p>
+
+	</code>
+	</fieldset>
+	
+	<h2>Download Link :</h2>
+	<p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://sourceforge.net/projects/crunch-wordlist/files/latest/download"><n>Click Here</n></a> </p>
+	<br>
+	<p><n>Comprehensive Guide on Crunch Tool :</n> <a href="https://www.hackingarticles.in/comprehensive-guide-on-crunch-tool/"><n>Click Here</n></a></p>
+	
+	<p><n>If you want Video about How To Generate Wordlists With Crunch :</n> <a href="https://youtu.be/S3eBn0Y3gdQ"><n>Click Here</n> </a> </p>
+	<br>
+	<p>Source : <a href="https://tools.kali.org/password-attacks/crunch">kali.org</a></p>
+	</ul>
+	
+	</p>
+    
+  </div>
+  
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About us</h2>
+      <p>free ethical hacking course for an enthusiast to learn ethical hacking from begginner to intermediate, By <a href="https://techdogie.blogspot.com/">Techdogie</a> team.</p>
+    </div>
+    <div class="card">
+      <h3>Follow us</h3>
+      <p><a href="https://techdogie.blogspot.com/">Techdogie</a></p>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <h2> <a href="index.html">Home</a></h2>
+</div>
+</body>
+</html>

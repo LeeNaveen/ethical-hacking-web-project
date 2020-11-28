@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+fieldset {
+  background-color: #eeeeee;
+  width: 90%; 
+   font-size:14px;       
+    
+}
+r {
+  background-color: silver;
+  font-size: 19px;
+  width: 100%;
+   }
+n  {
+     font-size: 20px;
+     }
+code {
+	background-color: #eeeeee;
+          }
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+    font-family: 'Lexend Deca', sans-serif;
+  padding: 20px;
+  margin: 0;
+        width: 100%;
+        height: 20vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 2px;
+  font-size: xx-small;
+  text-align: center;
+  background: white;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+@-webkit-keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+    @keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  background: #ffffff;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+.frame-area {
+  display: block;
+  background: #f1f1f1;
+  width: 100%;  /* RESPONSIVE WIDTH */
+  max-width: auto;
+  height: 750px;
+  overflow: hidden;  /* EDIT TO hidden FOR NO SCROLLBAR */
+  border: #999999 1px solid;
+  margin: 0px;
+  padding: 0px;
+  }
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a href="index.html"><img src="https://1.bp.blogspot.com/-tuZ2JeNu8TY/X2Gjn91qNQI/AAAAAAAAoQs/Yn_Ij5cLcp8qrFL1nPMipYGMXljXOmkBQCK4BGAYYCw/s1600/ronnie.png" class=" square responsive-img materialboxed"></a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn" >
+	
+	<ul>
+	<h1>How To Change Mac Address in Kali Linux Using Macchanger</h1>
+    <p style="text-align:justify">
+	<center><img src="img-macchanger.webp" height="400" width="600" class="square responsive-img materialboxed"/></center>
+	
+	<p><span style="white-space: pre;">	</span>Today you&#39;ll learn a quick and easy way on how to change your mac address in Kali Linux using a tool called macchanger.</p>
+	<p><span style="white-space: pre;">	</span>Before I start, there are two ways to go about changing your Mac address in Kali Linux that you&#39;ll learn here.</p><br>
+	<ol><ol>
+	<p><li>Using Macchanger</p>
+	<p><li>Manually</p>
+	</ol></ol>
+	<p><span style="white-space: pre;">	</span>I&#39;ll be showing you how to do both.</p><br>
+	
+	<p><span style="white-space: pre;">	</span><a href="https://github.com/alobbs/macchanger">Macchanger</a> is a free Mac address manipulation tool that comes pre&ndash;installed in <a href="https://kennyvn.com/cheatsheet-useful-bash-commands-linux/">Kali Linux</a> which is what we&#39;ll use here. If you don&#39;t have it installed, you can install it by following the installation steps below. </p>
+<br>
+
+	<h2>How To Install Macchanger :</h2>
+	<p><span style="white-space: pre;">	</span>If Macchanger is not installed, you can install it using the following command :</p>
+	
+	<p>&emsp;&emsp;&emsp;&emsp;&emsp;<code>&nbsp;sudo apt&ndash;get install macchanger&nbsp;</code></p>
+	
+	<p><span style="white-space: pre;">	</span>During the installation process, you&#39;ll be asked if you want to spoof the Mac address each time you attach a ethernet cable or a network adapter.</p>
+
+	<p><span style="white-space: pre;">	</span>If you select yes, you&#39;ll automatically be assigned a new Mac address for each interface brought up or plugged in. It&#39;s up to you if you want to enable this or not.</p>
+	
+	<p><span style="white-space: pre;">	</span>It&#39;s up to you if you want to enable this or not.</p><br>
+	
+	<h3>If you have mac&ndash;filtering enabled on your router, you&#39;ll want to select NO on this one; otherwise, you won&#39;t be able to connect to your own wifi.</h3>
+
+	<center><img src="img1-macchanger.jpg" height="400" width="600"/></center><br>
+	
+	<p><span style="white-space: pre;">	</span>Afterwards, check to make sure it&#39;s installed and working by typing <q>macchanger</q> in the terminal.</p>
+
+	<p><span style="white-space: pre;">	</span>It should look like this :</p>
+
+	<center><img src="img2-macchanger.jpg" height="400" width="600"/></center>
+
+	
+	<h2>How To Display Network Interfaces :</h2>
+	<p><span style="white-space: pre;">	</span>Next, we need to determine the interface we want to spoof.</p>
+	<p><span style="white-space: pre;">	</span>To list all available network interfaces on your system, type the following command :</p>
+	
+	<p>&emsp;&emsp;&emsp;&emsp;&emsp;<code>&nbsp;ifconfig&nbsp;</code></p>
+
+	<center><img src="img3-macchanger.jpg" height="400" width="600"/></center>
+
+	
+	<h3>Depending on which interface you want to spoof, you&#39;ll want to make sure you use the name of your interface :</h3>
+	 <p><span style="white-space: pre;">							</span>Mine is <q>wlan0.</q></p>
+	
+	<p><span style="white-space: pre;">	</span>Now that we know what interface to use, it&#39;s time to get spoofin!</p><br>
+
+	<h2>Bring Down The Interface You Want To Spoof :</h2>
+
+	<p><span style="white-space: pre;">	</span>If you spoof without bringing down the interface, you&#39;ll get the <q>insufficient permission</q> or <q>device is busy</q> error.</p><br>
+	
+	<h3>You must always bring the interface down before changing the Mac address : </h3>
+
+	<p><span style="white-space: pre;">	</span>Here&#39;s how :</p>	
+
+		<p>&emsp;&emsp;&emsp;&emsp;&emsp;<code>&nbsp;sudo ifconfig wlan0 down&nbsp;</code></p>
+	
+	<p><span style="white-space: pre;">	</span>Remember to replace <q>wlan0</q> with your interface.</p><br>
+	
+	<h3>Display Your Current Mac Address :</h3>
+
+	<p><span style="white-space: pre;">	</span>This will show you the current (and permanent) Mac address of an interface.</p>
+	<center><p>&ndash;s = print the Mac address</p></center>
+	
+		<p>&emsp;&emsp;&emsp;&emsp;&emsp;<code>&nbsp;macchanger &ndash;s wlan0&nbsp;</code></p><br>
+	
+	<h3>Set (Specify) Your New Mac Address :</h3>
+	<p><span style="white-space: pre;">	</span>This will set your Mac address to whatever value you assign it.</p>
+	<center><p>&ndash;m = set the Mac address</p></center>
+
+		<p>&emsp;&emsp;&emsp;&emsp;&emsp;<code>&nbsp;macchanger &ndash;m 11:22:33:44:55:66 wlan0&nbsp;</code></p><br>
+	
+	<h3>Change Mac Address To A Random Vendor :</h3>
+	<p><span style="white-space: pre;">	</span>This will randomize your Mac address and it will use one from a known vendor.</p>
+	
+	<p><span style="white-space: pre;">	</span><n>NOTE :</n> A vendor is the manufacturer of the network interface card (ie. TP&ndash;LINK TECHNOLOGIES CO., LTD)</p>
+	<center><p>&ndash;A = set a random Mac address of any kind.</p></center>
+
+		<p>&emsp;&emsp;&emsp;&emsp;&emsp;<code>&nbsp;macchanger &ndash;A wlan0&nbsp;</code></p><br>
+
+	<h3>Change Mac Address But Use The Same Vendor :</h3>
+	<p><span style="white-space: pre;">	</span>This will randomize your Mac address but it will use the same vendor as your current one.</p>
+	
+	<center><p>&ndash;a = set a random Mac address of the same kind</p></center>
+	
+		<p>&emsp;&emsp;&emsp;&emsp;&emsp;<code>&nbsp;macchanger &ndash;a wlan0&nbsp;</code></p><br>
+	
+	<h3>Change To A Fully Random Mac Address With No Vendor :</h3>
+	<p><span style="white-space: pre;">	</span>This will set a fully random Mac address with no vendor.</p>	
+	<p><span style="white-space: pre;">	</span>If you were to use a <a href="https://macvendors.com/">MAC address lookup tool</a>, it won&#39;t be able to detect the manufacturer because it&#39;s completely made up.</p>
+	<center><p>&ndash;r = set a fully random Mac address</p></center>
+	
+		<p>&emsp;&emsp;&emsp;&emsp;&emsp;<code>&nbsp;macchanger &ndash;r wlan0&nbsp;</code></p><br>
+	
+	<h3>Reset (Revert) Back To Original Mac Address :</h3>
+	<p><span style="white-space: pre;">	</span>This will revert the changes and it will go back to using the permanent Mac address of the interface.</p>
+	
+	<center><p>&ndash;p = reset to original Mac address<p></center>
+
+		<p>&emsp;&emsp;&emsp;&emsp;&emsp;<code>&nbsp;macchanger &ndash;p wlan0&nbsp;</code></p><br>
+	
+	<h3>View a list of known Mac vendors :</h3>
+	<p><span style="white-space: pre;">	</span>If you want to set your own Mac address, this will show you a huge list of legit Mac vendors you can choose from.</p>
+	<center><p>&ndash;l = print known vendors</p></center>
+	
+		<p>&emsp;&emsp;&emsp;&emsp;&emsp;<code>&nbsp;macchanger &ndash;l&nbsp;</code></p><br>
+	
+	<p><span style="white-space: pre;">	</span><b>NOTE :</b> After making changes to the Mac address, you&#39;ll need to bring the interface back up by typing: ifconfig wlan0 </p><br>
+	
+	<h2>How To Manually Change Mac Address On Kali Linux (without Macchanger) :</h2>
+	
+	<p><span style="white-space: pre;">	</span>If you don&#39;t have macchanger installed, here&#39;s how to change your Mac address manually.</p>
+	<p><span style="white-space: pre;">	</span>For this to work, you have to use a Mac address from a known vendor. Fully random Mac address won&#39;t always work.</p>
+	
+	<ul><ul style="list-style-type:disc">
+	<p><li><code>&nbsp;ifconfig wlan0 down&nbsp;</code></p>
+	<p><li><code>&nbsp;ifconfig wlan0 hw ether fc:c7:34:12:bc:1c&nbsp;</code></p>
+	<p><li><code>&nbsp;ifconfig wlan0 up&nbsp;</code></p>
+	</ul></ul>
+<br>
+
+<p><n>If you want Video about How To Change Mac Address In Kali Linux : <a href="https://www.youtube.com/watch?v=bshXz5r-CQA&feature=youtu.be">Click Here</a></n></p>
+
+<br><br>
+	
+Source : <a href="https://kennyvn.com/change-mac-address-macchanger-kali-linux/#:~:text=Macchanger%20is%20a%20free%20Mac%20address%20manipulation%20tool,of%20Passwords%20%26%20Wordlists%20for%20Kali%20Linux%20%282020%29">kennyvn.com</a>
+
+	</ul>
+	</p>
+    
+  </div>
+  
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About us</h2>
+      <p>free ethical hacking course for an enthusiast to learn ethical hacking from begginner to intermediate, By <a href="https://techdogie.blogspot.com/">Techdogie</a> team.</p>
+    </div>
+    <div class="card">
+      <h3>Follow us</h3>
+      <p><a href="https://techdogie.blogspot.com/">Techdogie</a></p>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <h2> <a href="index.html">Home</a></h2>
+</div>
+</body>
+</html>

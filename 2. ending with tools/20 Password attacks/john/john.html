@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+fieldset {
+  background-color: #eeeeee;
+  width: 90%; 
+   font-size:14px;        
+    
+}
+r {
+  background-color: silver;
+  font-size: 19px;
+  width: 100%;
+   }
+n  {
+     font-size: 20px;
+     }
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+    font-family: 'Lexend Deca', sans-serif;
+  padding: 20px;
+  margin: 0;
+        width: 100%;
+        height: 20vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 2px;
+  font-size: xx-small;
+  text-align: center;
+  background: white;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+@-webkit-keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+    @keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  background: #ffffff;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+.frame-area {
+  display: block;
+  background: #f1f1f1;
+  width: 100%;  /* RESPONSIVE WIDTH */
+  max-width: auto;
+  height: 750px;
+  overflow: hidden;  /* EDIT TO hidden FOR NO SCROLLBAR */
+  border: #999999 1px solid;
+  margin: 0px;
+  padding: 0px;
+  }
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a href="index.html"><img src="https://1.bp.blogspot.com/-tuZ2JeNu8TY/X2Gjn91qNQI/AAAAAAAAoQs/Yn_Ij5cLcp8qrFL1nPMipYGMXljXOmkBQCK4BGAYYCw/s1600/ronnie.png" class=" square responsive-img materialboxed"></a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn" >
+	
+<ul>
+	<center><h1>John the Ripper</h1></center>
+    <center><img src="img-john.webp" height="300" width="400"/></center>
+	
+	
+
+	<p><span style="white-space: pre;">	</span>John the Ripper is a fast password cracker, currently available for many flavors of Unix, macOS, Windows, DOS, BeOS, and OpenVMS (the latter requires a contributed patch). Its primary purpose is to detect weak Unix passwords. Besides several crypt(3) password hash types most commonly found on various Unix flavors, supported out of the box are Kerberos/AFS and Windows LM hashes, as well as DES&ndash;based tripcodes, plus hundreds of additional hashes and ciphers in <q>&ndash;jumbo</q> versions.</p>
+	<br>
+	<ul><ul>
+		<p>Stable release : 1.9.0 / May 14, 2019</p>
+		<p>Repository : <a href="https://github.com/openwall/john">github.com/magnum ripper/JohnTheRipper</a></p>
+		<p>Operating System : Cross&ndash;platform</p>
+		<p>Type : Password Cracking</p>
+		<p>License : GNU General Public License</p>
+		<p>Website : <a href="https://www.openwall.com/john/">www.openwall.com/john/</a></p>
+	</ul></ul>
+	<br>
+
+	<h2>Features :</h2>
+
+	<ul style="list-style-type: disc">
+
+	<p><li>John the Ripper is designed to be both feature&ndash;rich and fast. It combines several cracking modes in one program and is fully configurable for your particular needs (you can even define a custom cracking mode using the built&ndash;in compiler supporting a subset of C). Also, John is available for several different platforms which enables you to use the same cracker everywhere (you can even continue a cracking session which you started on another platform).</p>
+
+	
+	<p><li>Out of the box, John supports (and autodetects) the following Unix crypt(3) hash types: traditional DES&ndash;based, <q>bigcrypt</q>, BSDI extended DES&ndash;based, FreeBSD MD5&ndash;based (also used on Linux and in Cisco IOS), and OpenBSD Blowfish&ndash;based (now also used on some Linux distributions and supported by recent versions of Solaris). Also supported out of the box are Kerberos/AFS and Windows LM (DES&ndash;based) hashes, as well as DES&ndash;based tripcodes. </p>
+	
+	<p><li>When running on Linux distributions with glibc 2.7&plus;, John 1.7.6&plus; additionally supports (and autodetects) SHA&ndash;crypt hashes (which are actually used by recent versions of Fedora and Ubuntu), with optional OpenMP parallelization (requires GCC 4.2&plus;, needs to be explicitly enabled at compile&ndash;time by uncommenting the proper OMPFLAGS line near the beginning of the Makefile).</p>
+	
+	<p><li>Similarly, when running on recent versions of Solaris, John 1.7.6&plus; supports and autodetects SHA&ndash;crypt and SunMD5 hashes, also with optional OpenMP parallelization (requires GCC 4.2&plus; or recent Sun Studio, needs to be explicitly enabled at compile&ndash;time by uncommenting the proper OMPFLAGS line near the beginning of the Makefile and at runtime by setting the OMP&#95;NUM&#95;THREADS environment variable to the desired number of threads). </p>
+	
+	<p><li><q>&ndash;jumbo</q> versions add support for hundreds of additional hash and cipher types, including fast built&ndash;in implementations of SHA&ndash;crypt and SunMD5, Windows NTLM (MD4&ndash;based) password hashes, various macOS and Mac OS X user password hashes, fast hashes such as raw MD5, SHA&ndash;1, SHA&ndash;256, and SHA&ndash;512 (which many <q>web applications</q> historically misuse for passwords), various other <q>web application</q> password hashes, various SQL and LDAP server password hashes, and lots of other hash types, as well as many non&ndash;hashes such as SSH private keys, S/Key skeykeys files, Kerberos TGTs, encrypted filesystems such as macOS .dmg files and <q>sparse bundles</q>, encrypted archives such as ZIP (classic PKZIP and WinZip/AES), RAR, and 7z, encrypted document files such as PDF and Microsoft Office&#39;s &ndash; and these are just some examples. To load some of these larger files for cracking, a corresponding bundled *2john program should be used first, and then its output fed into JtR &ndash;jumbo.</p>
+
+	</ul>
+	
+	<h2>Download Link :</h2>
+	<p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://www.openwall.com/john/"><n>Click Here</n></a></p>
+	
+	<h3>How to install :</h3>
+	<p>&emsp;&emsp;&emsp;See <a href="https://www.openwall.com/john/doc/INSTALL.shtml">INSTALL</a> for information on installing John on your system.</p>
+	<br>
+
+	<p><n>If you want Tips and Tutorials about How to Use John the Ripper :</n> <a href="https://www.varonis.com/blog/john-the-ripper/"><n>Click Here</n></a></p>
+	
+	<p><n>If you want Video about Password Cracking With John The Ripper :</n> <a href="https://youtu.be/XjVYl1Ts6XI"><n>Click Here</n></a></p>
+	
+	
+<br><br>
+	Source : <a href="https://www.openwall.com/john/doc/">openwall.com</a>
+	
+	
+	
+    
+</ul>
+  </div>
+  
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About us</h2>
+      <p>free ethical hacking course for an enthusiast to learn ethical hacking from begginner to intermediate, By <a href="https://techdogie.blogspot.com/">Techdogie</a> team.</p>
+    </div>
+    <div class="card">
+      <h3>Follow us</h3>
+      <p><a href="https://techdogie.blogspot.com/">Techdogie</a></p>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <h2> <a href="index.html">Home</a></h2>
+</div>
+</body>
+</html>

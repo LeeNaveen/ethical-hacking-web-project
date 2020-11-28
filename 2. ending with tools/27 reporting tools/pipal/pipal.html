@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+fieldset {
+  background-color: #eeeeee;
+  width: 90%; 
+   font-size:14px;       
+    
+}
+r {
+  background-color: silver;
+  font-size: 19px;
+  width: 100%;
+   }
+n  {
+     font-size: 20px;
+     }
+code {
+	background-color: #eeeeee;
+          }
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+    font-family: 'Lexend Deca', sans-serif;
+  padding: 20px;
+  margin: 0;
+        width: 100%;
+        height: 20vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 2px;
+  font-size: xx-small;
+  text-align: center;
+  background: white;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+@-webkit-keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+    @keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  background: #ffffff;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+.frame-area {
+  display: block;
+  background: #f1f1f1;
+  width: 100%;  /* RESPONSIVE WIDTH */
+  max-width: auto;
+  height: 750px;
+  overflow: hidden;  /* EDIT TO hidden FOR NO SCROLLBAR */
+  border: #999999 1px solid;
+  margin: 0px;
+  padding: 0px;
+  }
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a href="index.html"><img src="https://1.bp.blogspot.com/-tuZ2JeNu8TY/X2Gjn91qNQI/AAAAAAAAoQs/Yn_Ij5cLcp8qrFL1nPMipYGMXljXOmkBQCK4BGAYYCw/s1600/ronnie.png" class=" square responsive-img materialboxed"></a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn" >
+
+<ul>
+
+
+	<center><h1>Pipal, Password Analyser</h1></center>
+	<center><img src="img-pipal.png" height="300" width="350"/></center>
+
+	<p><span style="white-space: pre;">	</span>Pipal is a password analyzer tool that can rapidly parse large lists of password and output stats on the contents. Pipal will provide you with stats on things like the most frequently used password, password lengths, dates (months/days/years) or numbers used, the most common base words and much more.</p>
+
+	<p><span style="white-space: pre;">	</span>It also makes recommendations based on the password makeup/charsets and gives you <a href="https://hashcat.net/hashcat/">Hashcat</a> masks.</p>
+
+	<p><span style="white-space: pre;">	</span>All this tool does is to give you the stats and the information to help you analyse the passwords. The real work is done by you in interpreting the results.</p>
+
+<h2>Tools included in the pipal package</h2>
+
+<p>&emsp;<n>pipal &ndash; Statistical analysis on password dumps</n>
+
+
+<fieldset>
+<code>
+
+
+<p>root@kali:~# pipal &ndash;h</p>
+<p>pipal 2.0 Robin Wood (robin@digininja.org) (www.digininja.org)</p>
+<br>
+<p>Usage: pipal [OPTION] ... FILENAME</p>
+    <p>&emsp;--help, -h: show help</p>
+    <p>&emsp;--top, -t X: show the top X results (default 10)</p>
+    <p>&emsp;--output, -o <filename>: output to file
+    <p>&emsp;--external, -e <filename>: external file to compare words against</p>
+    <p>&emsp;--gkey <Google Maps API key>: to allow zip code lookups (optional)</p>
+<br>
+    <p>&emsp;FILENAME: The file to count</p>
+
+
+</code>
+</fieldset>
+
+<br>
+
+<h2>Pipal Usage Example</h2>
+
+	<p>&emsp;<n><n>Analyze and display the top 5 passwords (&ndash;t 5), using the given file as input (/usr/share/wordlists/nmap.lst) :</n></p>
+
+<fieldset>
+<code>
+
+
+<p>root@kali:~# pipal &ndash;t 5 /usr/share/wordlists/nmap.lst</p>
+<p>Generating stats, hit CTRL-C to finish early and dump stats on words <p>already processed.</p>
+<p>Please wait...</p>
+<p>Processing:    100% | ooooooo | Time: 00:00:04</p>
+<br>
+<br>
+<p>Total entries = 5085</p>
+<p>Total unique entries = 5076</p>
+<br>
+<p>Top 5 passwords</p>
+<p>#!comment:  *                                                                         * = 10 (0.2%)</p>
+<p>cabrera = 1 (0.02%)</p>
+<p>#!comment:  * The Nmap Security Scanner is (C) 1996-2010 Insecure.Com LLC. Nmap is    * = 1 (0.02%)</p>
+<p>#!comment:  * also a registered trademark of Insecure.Com LLC.  This program is free  * = 1 (0.02%)</p>
+<p>#!comment:  * software; you may redistribute and/or modify it under the terms of the  * = 1 (0.02%)</p>
+<br>
+<p>Top 5 base words</p>
+<p>love = 26 (0.51%)</p>
+<p>angel = 22 (0.43%)</p>
+<p>password = 18 (0.35%)</p>
+<p>soccer = 18 (0.35%)</p>
+<p>princess = 13 (0.26%)</p>
+<br>
+<p>Password length (length ordered)</p>
+<p>3 = 1 (0.02%)</p>
+<p>4 = 11 (0.22%)</p>
+<p>5 = 434 (8.53%)</p>
+<p>6 = 1863 (36.64%)</p>
+<p>7 = 1219 (23.97%)</p>
+<p>8 = 865 (17.01%)</p>
+<p>9 = 387 (7.61%)</p>
+<p>10 = 156 (3.07%)</p>
+<p>11 = 41 (0.81%)</p>
+<p>12 = 13 (0.26%)</p>
+<p>13 = 7 (0.14%)</p>
+<p>14 = 1 (0.02%)</p>
+<p>15 = 1 (0.02%)</p>
+<p>16 = 1 (0.02%)</p>
+<p>17 = 1 (0.02%)</p>
+<p>87 = 83 (1.63%)</p>
+<p>88 = 1 (0.02%)</p>
+
+
+</code>
+</fieldset>
+
+
+<h2>Download Link :</h2>
+	<p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://digi.ninja/projects/pipal.php#download"><n>Click Here</n></a></p>
+
+<br>
+<p><n>If you want more information about Pipal : <a href="https://digi.ninja/projects/pipal.php">Click Here</a></p>
+<br>
+
+<p><n>If you want Video about Pipal tool : <a href="https://youtu.be/NNvhYNomcnE">Click Here</a></n></p>
+<br><br>
+
+Source : <a href="https://tools.kali.org/reporting-tools/pipal">kali.org</a>
+
+</ul>
+	
+    
+  </div>
+  
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About us</h2>
+      <p>free ethical hacking course for an enthusiast to learn ethical hacking from begginner to intermediate, By <a href="https://techdogie.blogspot.com/">Techdogie</a> team.</p>
+    </div>
+    <div class="card">
+      <h3>Follow us</h3>
+      <p><a href="https://techdogie.blogspot.com/">Techdogie</a></p>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <h2> <a href="index.html">Home</a></h2>
+</div>
+</body>
+</html>

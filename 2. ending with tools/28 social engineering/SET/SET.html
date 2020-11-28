@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+fieldset {
+  background-color: #eeeeee;
+  width: 90%; 
+   font-size:14px;       
+    
+}
+r {
+  background-color: silver;
+  font-size: 19px;
+  width: 100%;
+   }
+n  {
+     font-size: 20px;
+     }
+code {
+	background-color: #eeeeee;
+          }
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+    font-family: 'Lexend Deca', sans-serif;
+  padding: 20px;
+  margin: 0;
+        width: 100%;
+        height: 20vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 2px;
+  font-size: xx-small;
+  text-align: center;
+  background: white;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+@-webkit-keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+    @keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  background: #ffffff;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+.frame-area {
+  display: block;
+  background: #f1f1f1;
+  width: 100%;  /* RESPONSIVE WIDTH */
+  max-width: auto;
+  height: 750px;
+  overflow: hidden;  /* EDIT TO hidden FOR NO SCROLLBAR */
+  border: #999999 1px solid;
+  margin: 0px;
+  padding: 0px;
+  }
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a href="index.html"><img src="https://1.bp.blogspot.com/-tuZ2JeNu8TY/X2Gjn91qNQI/AAAAAAAAoQs/Yn_Ij5cLcp8qrFL1nPMipYGMXljXOmkBQCK4BGAYYCw/s1600/ronnie.png" class=" square responsive-img materialboxed"></a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn" >
+
+<ul>
+
+
+
+	<center><h1>Social&ndash;Engineer Toolkit (SET)</h1></center>
+	<center><img src="img-SET.jpg" height="400" width="400" /></center>
+
+<p><span style="white-space: pre;">	</span>The Social&ndash;Engineer Toolkit is an open&ndash;source penetration testing framework designed for Social&ndash;Engineering. SET has a number of custom attack vectors that allow you to make a believable attack in a fraction of the time.</p>
+
+<br>
+<h2>SET Usage Example :</h2>
+
+<p><span style="white-space: pre;">	</span> Access this site in desktop site </p>
+
+<p><span style="white-space: pre;">	</span>Steps to acces desktop site :</p>
+<ol><ol>
+<p><li> Tap on three dot</p>
+<p><li> Search for desktop site option</p>
+<p><li> Enable desktop site</p>
+</ol></ol>
+<fieldset>
+<code>
+
+<p>root@kali:~# setoolkit</p>
+<br>
+         <p>&emsp;&emsp;&emsp;&emsp;01011 0010110 11110 1110 10100 10000 0011100</p>
+<br>
+<p>[---]        The Social-Engineer Toolkit (SET)         [---]</p>
+<p>[---]        Created by: David Kennedy (ReL1K)         [---]</p>
+                      <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Version: 7.7.9</p>
+                   <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Codename: 'Blackout'</p>
+<p>[---]        Follow us on Twitter: @TrustedSec         [---]</p>
+<p>[---]        Follow me on Twitter: @HackingDave        [---]</p>
+<p>[---]       Homepage: https://www.trustedsec.com       [---]</p>
+        <p>&emsp;&emsp;&emsp;&emsp;Welcome to the Social-Engineer Toolkit (SET).</p>
+         <p>&emsp;&emsp;&emsp;&emsp;The one stop shop for all of your SE needs.</p>
+<br>
+      <p>&emsp;&emsp;&emsp;Join us on irc.freenode.net in channel #setoolkit</p>
+<br>
+    <p>&emsp;The Social-Engineer Toolkit is a product of TrustedSec.</p>
+<br>
+           <p>&emsp;&emsp;&emsp;&emsp;&emsp;Visit: https://www.trustedsec.com</p>
+<br>
+   <p>&emsp;It's easy to update using the PenTesters Framework! (PTF)</p>
+<p>Visit https://github.com/ trustedsec/ptf to update all your tools!</p>
+<br>
+<br>
+ <p>&nbsp;Select from the menu:</p>
+<br>
+   <p>&emsp;&emsp;1) Social&ndash;Engineering Attacks</p>
+   <p>&emsp;&emsp;2) Penetration Testing (Fast&ndash;Track)</p>
+   <p>&emsp;&emsp;3) Third Party Modules</p>
+   <p>&emsp;&emsp;4) Update the Social&ndash;Engineer Toolkit</p>
+   <p>&emsp;&emsp;5) Update SET configuration</p>
+   <p>&emsp;&emsp;6) Help, Credits, and About</p>
+<br>
+  <p>&emsp;&nbsp;99) Exit the Social&ndash;Engineer Toolkit</p>
+<br>
+<p>set&gt;</p>
+
+</code>
+</fieldset>
+
+<br>
+
+<h2>Supported platforms</h2>
+<ol>
+	<p><li>Linux </p>
+	<p><li>Mac OS X </p>
+</ol>
+<br>
+
+<h2>Installation :</h2>
+<p><span style="white-space: pre;">	</span><n>Install via requirements.txt :</n></p>
+
+<p>&emsp;&emsp;&emsp;<code>&nbsp;pip3 install &ndash;r requirements.txt
+python setup.py&nbsp;</code></p>
+
+<br>
+
+<h2>Install SET :</h2>
+<p><span style="white-space: pre;">	</span>All OSs :</p>
+
+
+<p><li><code>&nbsp;git clone https://github.com/trustedsec/social&ndash;engineer&ndash;toolkit/ setoolkit/&nbsp;</code></p>
+
+<p><li><code>&nbsp;cd setoolkit&nbsp;</code></p>
+
+<p><li><code>&nbsp;pip3 install &ndash;r requirements.txt&nbsp;</code></p>
+
+<p><li><code>&nbsp;python setup.py&nbsp;</code></p>
+
+<br>
+
+<p><n>SET Tutorial : <a href="https://raw.githubusercontent.com/trustedsec/social-engineer-toolkit/master/readme/User_Manual.pdf">Click Here</a>
+<br>
+
+<p><n>If you want Video about Gain Access To Social Media Accounts Using Social Engineering Toolkit : <a href="https://www.youtube.com/watch?v=R5IuIMYFfX8&feature=youtu.be">Click Here</a></n></p>
+<br><br>
+Source : <a href="https://tools.kali.org/information-gathering/set">kali.org</a>
+
+
+
+
+</ul>  
+  </div>
+  
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About us</h2>
+      <p>free ethical hacking course for an enthusiast to learn ethical hacking from begginner to intermediate, By <a href="https://techdogie.blogspot.com/">Techdogie</a> team.</p>
+    </div>
+    <div class="card">
+      <h3>Follow us</h3>
+      <p><a href="https://techdogie.blogspot.com/">Techdogie</a></p>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <h2> <a href="index.html">Home</a></h2>
+</div>
+</body>
+</html>

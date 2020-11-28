@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+fieldset {
+  background-color: #eeeeee;
+  width: 90%; 
+   font-size:14px;        
+    }
+r {
+  background-color: silver;
+  font-size: 19px;
+  width: 100%;
+   }
+n  {
+     font-size: 20px;
+     }
+code {
+	background-color: #eeeeee;
+          }
+* {
+  box-sizing: border-box;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+    font-family: 'Lexend Deca', sans-serif;
+  padding: 20px;
+  margin: 0;
+        width: 100%;
+        height: 20vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 2px;
+  font-size: xx-small;
+  text-align: center;
+  background: white;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+@-webkit-keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+    @keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  background: #ffffff;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+.frame-area {
+  display: block;
+  background: #f1f1f1;
+  width: 100%;  /* RESPONSIVE WIDTH */
+  max-width: auto;
+  height: 750px;
+  overflow: hidden;  /* EDIT TO hidden FOR NO SCROLLBAR */
+  border: #999999 1px solid;
+  margin: 0px;
+  padding: 0px;
+  }
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+
+  <a href="index.html"><img src="https://1.bp.blogspot.com/-tuZ2JeNu8TY/X2Gjn91qNQI/AAAAAAAAoQs/Yn_Ij5cLcp8qrFL1nPMipYGMXljXOmkBQCK4BGAYYCw/s1600/ronnie.png" class=" square responsive-img materialboxed"></a>
+
+</div>
+
+<div class="row">
+
+  <div class="leftcolumn" >
+
+
+<ul>
+  
+
+
+
+	<center><h1>Gobuster</h1></center>
+	<center><img src="img-gobuster.png" height="400" width="700"/></center>
+<p><br /></p>
+<p>&emsp;Gobuster is a tool used to brute&ndash;force :</p>
+<ul style="list-style-type: disc">
+<p><li> URIs (directories and files) in web sites.</p>
+<p><li> DNS subdomains (with wildcard support).</p>
+<p><li> Virtual Host names on target web servers.</p>
+<p><li> Open Amazon S3 buckets</p>
+</ul>
+<br>
+
+<p><h2>Oh dear God.. WHY!?</h2></p>
+<p><n>&ensp;Because I wanted :</n></p>
+
+<ol>
+<p><li> &nbsp; ... something that didn&#39;t have a fat Java GUI (console FTW).</p>
+<p><li> &nbsp; ... to build something that just worked on the command line.</p>
+<p><li> &nbsp; ... something that did not do recursive brute force.</p>
+<p><li> &nbsp; ... something that allowed me to brute force folders and multiple extensions at once.</p>
+<p><li> &nbsp; ... something that compiled to native on multiple platforms.</p>
+<p><li> &nbsp; ... something that was faster than an interpreted script (such as Python).</p>
+<p><li> &nbsp; ... something that didn&#39;t require a runtime.</p>
+<p><li> &nbsp; ... use something that was good with concurrency (hence Go).</p>
+<p><li> &nbsp; ... to build something in Go that wasn&#39;t totally useless.</p>
+
+</ol>
+<br>
+
+<p><h2>Available Modes :</h2></p>
+<ul style="list-style-type: disc">
+<p><li> dir &ndash; the classic directory brute&ndash;forcing mode</p>
+<p><li> dns &ndash; DNS subdomain brute&ndash;forcing mode</p>
+<p><li> s3 &ndash; Enumerate open S3 buckets and look for existence and bucket listings</p>
+<p><li> vhost &ndash; virtual host brute&ndash;forcing mode (not the same as DNS!)</p>
+</ul>
+<br>
+
+<p><h2>Download Link :</h2>
+	 <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/OJ/gobuster/releases"><n>Click Here</n></a></p>
+
+<p><span style="white-space: pre;">	</span><b>Download using <r>&nbsp;go get </r> :</b></p>
+
+<p><span style="white-space: pre;">		</span>If you have a <a href="https://golang.org/"><n>Go</n></a> environment ready to go, it&#39;s as easy as :</p>
+
+<p><span style="white-space: pre;">			</span><code>&nbsp;go get github.com/OJ/gobuster&nbsp;</code></p><p><br /></p>
+
+<p><h2>Tools included in the gobuster package :</h2></p>
+<p><span style="white-space: pre;">	</span><n>gobuster &ndash; Directory/file and DNS busting tool written in Go</p>
+
+<fieldset>
+<code>
+
+<p>root@kali:~# gobuster &ndash;h</n></p>
+<p>Usage of gobuster:</p>
+<p>&nbsp; -P string</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; Password for Basic Auth (dir mode only)</p>
+<p>&nbsp; -U string</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; Username for Basic Auth (dir mode only)</p>
+<p>&nbsp; -a string</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; Set the User-Agent string (dir mode only)</p>
+<p>&nbsp; -c string</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; Cookies to use for the requests (dir mode only)</p>
+<p>&nbsp; -e&nbsp; &nbsp; Expanded mode, print full URLs</p>
+<p>&nbsp; -f&nbsp; &nbsp; Append a forward-slash to each directory request (dir mode only)</p>
+<p>&nbsp; -fw</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; Force continued operation when wildcard found (dns mode only)</p>
+<p>&nbsp; -i&nbsp; &nbsp; Show IP addresses (dns mode only)</p>
+<p>&nbsp; -l&nbsp; &nbsp; Include the length of the body in the output (dir mode only)</p>
+<p>&nbsp; -m string</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; Directory/File mode (dir) or DNS mode (dns) (default "dir")</p>
+<p>&nbsp; -n&nbsp; &nbsp; Don't print status codes</p>
+<p>&nbsp; -p string</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; Proxy to use for requests [http(s)://host:port] (dir mode only)</p>
+<p>&nbsp; -q&nbsp; &nbsp; Don't print the banner and other noise</p>
+<p>&nbsp; -r&nbsp; &nbsp; Follow redirects</p><p>&nbsp; -s string</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; Positive status codes (dir mode only) (default "200,204,301,302,307")</p>
+<p>&nbsp; -t int</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; Number of concurrent threads (default 10)</p>
+<p>&nbsp; -u string</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; The target URL or Domain</p>
+<p>&nbsp; -v&nbsp; &nbsp; Verbose output (errors)</p>
+<p>&nbsp; -w string</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; Path to the wordlist</p>
+<p>&nbsp; -x string</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; File extension(s) to search for (dir mode only)</p>
+
+</code>
+</fieldset>
+
+<br>
+
+
+<p><span style="white-space: pre;">	</span><n>Scan a website <b>(&ndash;u http://192.168.0.155/)</b> for directories using a wordlist <b>(/home/dirb/wordlist.txt)</b> and print the full URLs of discovered paths <b>(&ndash;e)</b> :</n></p>
+
+
+<fieldset>
+<code>
+
+<p>root@kali:~# gobuster &ndash;e &ndash;u http://192.168.0.155/ &ndash;w /home/dirb/wordlist.txt</p>
+<p><br /></p>
+<p>Gobuster v1.2&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; OJ Reeves (@TheColonial)</p><p>==============================</p><p>[+] Mode&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: dir</p><p>[+] Url/Domain&nbsp; &nbsp;: http://192.168.0.155/</p><p>[+] Threads&nbsp; &nbsp; &nbsp; : 10</p>
+<p>[+] Wordlist&nbsp; &nbsp; &nbsp;: /home/dirb/wordlist.txt</p>
+<p>[+] Status codes : 301,302,307,200,204</p>
+<p>[+] Expanded&nbsp; &nbsp; &nbsp;: true</p>
+<p>==============================</p>
+<p>http://192.168.0.155/blog (Status: 301)</p>
+<p>http://192.168.0.155/index.html (Status: 200)</p>
+<p>http://192.168.0.155/index (Status: 200)</p>
+<p>http://192.168.0.155/photo (Status: 301)</p>
+<p>http://192.168.0.155/wordpress (Status: 301)</p>
+<p>==============================</p>
+
+</code>
+</fieldset>
+
+
+<br>
+<p>If you want <n>Video</n> about gobuster usage, <a href="https://asciinema.org/a/102166/embed?"><n>Click Here</n></a></p>
+
+
+
+<p> If you want <n>Tutorial for Gobuster Tool</n>, <a href="https://sitechsecurity.wordpress.com/2020/07/14/tutorial-for-gobuster-tool/"><n>Click Here</n></a></p>
+<br>
+
+<p>Source : <a href="https://tools.kali.org/web-applications/gobuster">kali.org</a></p>
+
+</ul>
+
+</div>
+  
+
+
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About us</h2>
+      <p>free ethical hacking course for an enthusiast to learn ethical hacking from beginner to intermediate, By <a href="https://techdogie.blogspot.com/">Techdogie</a> team.</p>
+    </div>
+    <div class="card">
+      <h3>Follow us</h3>
+      <p><a href="https://techdogie.blogspot.com/">Techdogie</a></p>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <h2> <a href="index.html">Home</a></h2>
+</div>
+</body>
+</html>

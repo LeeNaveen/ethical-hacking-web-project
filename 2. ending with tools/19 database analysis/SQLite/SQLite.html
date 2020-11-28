@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+fieldset {
+  background-color: #eeeeee;
+  width: 90%; 
+   font-size:14px;        
+    
+}
+r {
+  background-color: silver;
+  font-size: 19px;
+  width: 100%;
+   }
+n  {
+     font-size: 20px;
+     }
+* {
+  box-sizing: border-box;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+    font-family: 'Lexend Deca', sans-serif;
+  padding: 20px;
+  margin: 0;
+        width: 100%;
+        height: 20vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 2px;
+  font-size: xx-small;
+  text-align: center;
+  background: white;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+@-webkit-keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+    @keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  background: #ffffff;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+.frame-area {
+  display: block;
+  background: #f1f1f1;
+  width: 100%;  /* RESPONSIVE WIDTH */
+  max-width: auto;
+  height: 750px;
+  overflow: hidden;  /* EDIT TO hidden FOR NO SCROLLBAR */
+  border: #999999 1px solid;
+  margin: 0px;
+  padding: 0px;
+  }
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+
+  <a href="index.html"><img src="https://1.bp.blogspot.com/-tuZ2JeNu8TY/X2Gjn91qNQI/AAAAAAAAoQs/Yn_Ij5cLcp8qrFL1nPMipYGMXljXOmkBQCK4BGAYYCw/s1600/ronnie.png" class=" square responsive-img materialboxed"></a>
+
+</div>
+
+<div class="row">
+
+  <div class="leftcolumn" >
+
+
+<ul>
+
+
+	<center><h1>SQLite</h1></center>
+
+<br>
+	<center><img src="img-sqlite.png" height="400" width="500"/></center>
+
+	<p><span style="white-space: pre;">	</span>SQLite is a C&ndash;language library that implements a <a href="https://www.sqlite.org/footprint.html">small</a>, <a href="https://www.sqlite.org/fasterthanfs.html">fast</a>, <a href="https://www.sqlite.org/selfcontained.html">self&ndash;contained</a>, <a href="https://www.sqlite.org/hirely.html">high&ndash;reliability</a>, <a href="https://www.sqlite.org/fullsql.html">full&ndash;featured</a>, SQL database engine. SQLite is the <a href="https://www.sqlite.org/mostdeployed.html">most used</a> database engine in the world. SQLite is built into all mobile phones and most computers and comes bundled inside countless other applications that people use every day. </p>
+	<p><span style="white-space: pre;">	</span>SQLite is an in&ndash;process library that implements a <a href="https://www.sqlite.org/selfcontained.html">self&ndash;contained</a>, <a href="https://www.sqlite.org/serverless.html">serverless</a>, <a href="https://www.sqlite.org/zeroconf.html">zero&ndash;configuration</a>, <a href="https://www.sqlite.org/transactional.html">transactional</a> SQL database engine. The code for SQLite is in the <a href="https://www.sqlite.org/copyright.html">public domain</a> and is thus free for use for any purpose, commercial or private. SQLite is the <a href="https://www.sqlite.org/mostdeployed.html">most widely deployed</a> database in the world with more applications than we can count, including several <a href="https://www.sqlite.org/famous.html">high&ndash;profile projects</a>.</p>
+	<p><span style="white-space: pre;">	</span>The SQLite <a href="https://www.sqlite.org/fileformat2.html">file format</a> is stable, cross&ndash;platform, and backwards compatible and the developers pledge to keep it that way through at least the year 2050. SQLite database files are commonly used as containers to transfer rich content between systems <a href="https://www.sqlite.org/aff_short.html">[1]</a> <a href="https://www.sqlite.org/sqlar.html">[2]</a> <a href="https://www.sqlite.org/appfileformat.html">[3]</a> and as a long&ndash;term archival format for data <a href="https://www.sqlite.org/locrsf.html">[4]</a>. There are over 1 trillion (1e12) SQLite databases in active use <a href="https://www.sqlite.org/mostdeployed.html">[5]</a>. </p>
+
+<br><br>
+<ol><ol>
+	<p>Developer(s) : D. Richard Hipp</p>
+	<p>Initial release : 17 August 2000</p>
+	<p>Stable release : 3.33.0 (August 14, 2020)</p> 
+	<p>Repository : <a href="https://www.sqlite.org/src/doc/trunk/README.md">www.sqlite.org/src/</a></p>
+	<p>Written in : C</p>
+	<p>Operating System : Cross&ndash;platform</p>
+	<p>Size : 699 KiB</p>
+	<p>Type : RDBMS (embedded)</p>
+	<p>License : Public domain</p>
+	<p>Website : <a href="https://sqlite.org/index.html">sqlite.org </a></p>
+</ol></ol>
+<br><br>
+
+<h2>Features Of SQLite :</h2>
+<ul style="list-style-type: disc">
+	<p><li> <a href="https://www.sqlite.org/transactional.html">Transactions</a> are atomic, consistent, isolated, and durable (ACID) even after system crashes and power failures.</p>
+	<p><li> <a href="https://www.sqlite.org/zeroconf.html">Zero&ndash;configuration</a> &ndash; no setup or administration needed.</p>
+	<p><li> <a href="https://www.sqlite.org/fullsql.html">Full&ndash;featured SQL</a> implementation with advanced capabilities like <a href="https://www.sqlite.org/partialindex.html">partial indexes</a>, <a href="https://www.sqlite.org/expridx.html">indexes on expressions</a>, <a href="https://www.sqlite.org/json1.html">JSON</a>, <a href="https://www.sqlite.org/lang_with.html">common table expressions</a>, and <a href="https://www.sqlite.org/windowfunctions.html">window functions</a>. (<a href="https://www.sqlite.org/omitted.html">Omitted features</a>)</p>
+	<p><li> A complete database is stored in a <a href="https://www.sqlite.org/onefile.html">single cross&ndash;platform disk file</a>. Great for use as an <a href="https://www.sqlite.org/appfileformat.html">application file format</a>.</p>
+	<p><li> Supports terabyte&ndash;sized databases and gigabyte&ndash;sized strings and blobs. (See <a href="https://www.sqlite.org/limits.html">limits.html</a>.)</p>
+	<p><li> Small code <a href="https://www.sqlite.org/footprint.html">footprint</a>: less than 600KiB fully configured or much less with optional features omitted.</p>
+	<p><li> Simple, easy to use <a href="https://www.sqlite.org/footprint.html">API</a>.</p>
+	<p><li> Fast: In some cases, SQLite is <a href="https://www.sqlite.org/fasterthanfs.html">faster than direct filesystem I/O</a></p>
+	<p><li> Written in ANSI&ndash;C. <a href="https://www.sqlite.org/tclsqlite.html">TCL bindings</a> included. Bindings for dozens of other languages available separately.</p>
+	<p><li> Well&ndash;commented source code with <a href="https://www.sqlite.org/testing.html#coverage">100% branch test coverage</a>.</p>
+	<p><li> Available as a <a href="https://www.sqlite.org/amalgamation.html">single ANSI&ndash;C source-code file</a> that is <a href="https://www.sqlite.org/howtocompile.html">easy to compile</a> and hence is easy to add into a larger project.</p>
+	<p><li> <a href="https://www.sqlite.org/selfcontained.html">Self&ndash;contained</a> : no external dependencies.</p>
+	<p><li> Cross&ndash;platform: Android, *BSD, iOS, Linux, Mac, Solaris, VxWorks, and Windows (Win32, WinCE, WinRT) are supported out of the box. Easy to port to other systems.</p>
+	<p><li> Sources are in the <a href="https://www.sqlite.org/copyright.html">public domain</a>. Use for any purpose.</p>
+	<p><li> Comes with a standalone <a href="https://www.sqlite.org/cli.html">command&ndash;line interface</a> (CLI) client that can be used to administer SQLite databases.</p>
+
+</ul>
+
+<br>
+
+SQLite <a href="https://sqlite.org/src/doc/trunk/README.md">source code</a> is in the <a href="https://www.sqlite.org/copyright.html">public&ndash;domain</a> and is free to everyone to use for any purpose. 
+
+<br><br>
+<h2>Download Link :</h2>
+	 &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;<a href="https://www.sqlite.org/download.html"><n>Click Here</n></a>
+
+<br><br>
+
+<n>How to Download and Install Guide :</n> <a href="https://www.sqlitetutorial.net/download-install-sqlite/"><n>Click Here</n></a>
+
+<br><br><br>
+
+<n>SQLite Tutorial : <a href="https://www.sqlitetutorial.net/">Click Here</a></n>
+
+<br><br>
+
+<n>For Video Tutorial : <a href="https://www.youtube.com/watch?v=U7nfe4adDw8&list=PLS1QulWo1RIa0-Cs2Qx6GFyiIVVVS9lCS">Click Here</a></n>
+
+<br><br><br>
+
+Source : <a href="https://www.sqlite.org/index.html">sqlite.org</a>
+
+
+</ul>
+
+</div>
+  
+
+
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About us</h2>
+      <p>free ethical hacking course for an enthusiast to learn ethical hacking from beginner to intermediate, By <a href="https://techdogie.blogspot.com/">Techdogie</a> team.</p>
+    </div>
+    <div class="card">
+      <h3>Follow us</h3>
+      <p><a href="https://techdogie.blogspot.com/">Techdogie</a></p>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <h2> <a href="index.html">Home</a></h2>
+</div>
+</body>
+</html>

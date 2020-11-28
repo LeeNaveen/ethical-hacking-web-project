@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+fieldset {
+  background-color: #eeeeee;
+  width: 90%; 
+   font-size:14px;       
+    
+}
+r {
+  background-color: silver;
+  font-size: 19px;
+  width: 100%;
+   }
+n  {
+     font-size: 20px;
+     }
+code {
+	background-color: #eeeeee;
+          }
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+    font-family: 'Lexend Deca', sans-serif;
+  padding: 20px;
+  margin: 0;
+        width: 100%;
+        height: 20vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 2px;
+  font-size: xx-small;
+  text-align: center;
+  background: white;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+@-webkit-keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+    @keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  background: #ffffff;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+.frame-area {
+  display: block;
+  background: #f1f1f1;
+  width: 100%;  /* RESPONSIVE WIDTH */
+  max-width: auto;
+  height: 750px;
+  overflow: hidden;  /* EDIT TO hidden FOR NO SCROLLBAR */
+  border: #999999 1px solid;
+  margin: 0px;
+  padding: 0px;
+  }
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a href="index.html"><img src="https://1.bp.blogspot.com/-tuZ2JeNu8TY/X2Gjn91qNQI/AAAAAAAAoQs/Yn_Ij5cLcp8qrFL1nPMipYGMXljXOmkBQCK4BGAYYCw/s1600/ronnie.png" class=" square responsive-img materialboxed"></a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn" >
+
+<ul>
+
+
+
+	<center><h1>Ettercap</h1></center>
+	<center><img src="img-ettercap.jpg" height="400" width="650"/></center>
+
+
+	<p><span style="white-space: pre;">	</span>Ettercap stands for Ethernet Capture. Ettercap is a comprehensive suite for man in the middle attacks. It features sniffing of live connections, content filtering on the fly and many other interesting tricks. It supports active and passive dissection of many protocols and includes many features for network and host analysis.</p>
+<br>
+<ul>
+
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;Original author(s) : Ettercap Dev. Team, ALoR, NaGA</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;Initial release : January 25, 2001</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;Stable release : 0.8.3.1&ndash;Bertillon / August 1, 2020</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;Repository : <a href="https://github.com/Ettercap/ettercap">github.com/Ettercap/ettercap</a></p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;Written in : C</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;Operating System : Cross&ndash;platform</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;Available in : English</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;Type : Computer security</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;License : GNU General Public License</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;Website : <a href="https://www.ettercap-project.org/">http://www.ettercap&ndash;project.org</a></p>
+
+</ul>
+<br>
+
+<h2>DESCRIPTION :</h2>
+       <p><span style="white-space: pre;">	</span>Ettercap was born as a sniffer for switched LAN (and obviously even <q>hubbed</q> ones), but during the development process it has gained more  and  more  features  that  have  changed  it to a powerful and flexible tool for man&ndash;in&ndash;the&ndash;middle attacks.  It supports active and passive dissection of many protocols(even ciphered ones) and includes many features for network and host analysis (such as OS fingerprint).</p>
+
+<ol>
+       <p>It has two main sniffing options :</p>
+<ol>
+       <p><li><n>UNIFIED</n>, this method sniffs all the packets that pass on the cable. You can choose to put or not the interface in promisc mode (&ndash;p option). The packet not directed  to  the host running ettercap will be forwarded automatically using layer 3 routing. So you can use a mitm attack launched from a different tool and let ettercap modify the packets and forward them for you.</p>
+       <p>&nbsp;&nbsp;&nbsp;The kernel ip_forwarding is always disabled by ettercap. This is done to prevent a forward of a packet twice (one by ettercap  and  one  by  the  kernel). This is an invasive behaviour on gateways. So we recommend you to use ettercap on the gateways ONLY with the UNOFFENSIVE MODE ENABLED. Since ettercap listens only on one network interface, launching it on the gateway in offensive mode will not allow packets to be rerouted back from the second interface.</p>
+
+       <p><li><n>BRIDGED</n>, it uses two network interfaces and forward the traffic from one to the other while performing  sniffing  and  content  filtering.  This  sniffing method  is  totally  stealthy  since  there is no way to find that someone is in the middle on the cable.  You can look at this method as a mitm attack at layer 1. You will be in the middle of the cable between two entities. Don&#39;t use it on gateways or it will transform your gateway into a bridge. HINT:  you can use the content filtering engine to drop packets that should not pass. This way ettercap will work as an inline IPS ;)</p>
+
+       <p>&nbsp;&nbsp;&nbsp;You can also perform man in the middle attacks while using the unified sniffing. You can choose the mitm attack that you prefer. The mitm attack module is independent from the sniffing and filtering process, so you can launch several attacks at the same time or use your own tool for the attack.  The  crucial point is that the packets have to arrive to ettercap with the correct mac address and a different ip address (only these packets will be forwarded).</p>
+
+</ol></ol>
+
+<br>
+<h3>The most relevant ettercap features are :</h3>
+
+<ul style="list-style-type: disc">
+       <p><b><li>SSH1  support :</b> you can sniff User and Pass, and even the data of an SSH1 connection. ettercap is the first software capable to sniff an SSH connection in FULL&ndash;DUPLEX</p>
+
+       <p><b><li>SSL support :</b> you can sniff SSL secured data... a fake certificate is presented to the client and the session is decrypted.</p>
+
+       <p><b><li>Characters injection in an established connection :</b> you can inject characters to the server (emulating commands) or  to  the  client  (emulating  replies) maintaining the connection alive !!</p>
+
+       <p><b><li>Packet  filtering/dropping :</b>  You can set up a filter script that searches for a particular string (even hex) in the TCP or UDP payload and replace it with yours or drop the entire packet. The filtering engine can match any field of the network protocols and modify whatever you want.</p>
+
+       <p><b><li>Remote traffic sniffing through tunnels and route mangling :</b> You can play with linux cooked interfaces or use the integrated plugin to  sniff  tunneled  or route&ndash;mangled remote connections and perform mitm attacks on them.</p>
+
+       <p><b><li>Plug&ndash;ins support :</b> You can create your own plugin using the ettercap&#39;s API.</p>
+
+       <p><b><li>Password  collector for :</b> TELNET, FTP, POP, RLOGIN, SSH1, ICQ, SMB, MySQL, HTTP, NNTP, X11, NAPSTER, IRC, RIP, BGP, SOCKS 5, IMAP 4, VNC, LDAP, NFS, SNMP, HALF LIFE, QUAKE 3, MSN, YMSG.</p>
+
+       <p><b><li>Passive OS fingerprint :</b> you scan passively the lan (without sending any packet) and gather detailed info about the hosts in  the  LAN:  Operating  System, running services, open ports, IP, mac address and network adapter vendor.</p>
+
+       <p><b><li>Kill a connection :</b> from the connections list you can kill all the connections you want</p>
+
+</ul>
+
+<br>
+
+<h2>TARGET SPECIFICATION :</h2>
+       <p>&nbsp;&nbsp;&nbsp;There  is  no concept of SOURCE nor DEST. The two targets are intended to filter traffic coming from one to the other and vice&ndash;versa (since the connection is bidirectional).</p>
+
+       <p>&nbsp;&nbsp;&nbsp;TARGET is in the form MAC/IPs/PORTs.</p>
+       <p>&nbsp;&nbsp;&nbsp;NOTE: If IPv6 is enabled, TARGET is in the form MAC/IPs/IPv6/PORTs.</p>
+<br>
+       <p>&nbsp;&nbsp;&nbsp;If you want you can omit any of its parts and this will represent an ANY in that part.</p>
+       <p>&nbsp;&nbsp;&nbsp;e.g.</p>
+       <p>&nbsp;&nbsp;&nbsp;<q>//80</q> means ANY mac address, ANY ip and ONLY port 80</p>
+       <p>&nbsp;&nbsp;&nbsp;<q>/10.0.0.1/</q> means ANY mac address, ONLY ip 10.0.0.1 and ANY port</p>
+<br>
+       <p>&nbsp;&nbsp;&nbsp;MAC must be unique and in the form 00:11:22:33:44:55</p>
+<br>
+       <p>&nbsp;&nbsp;&nbsp;IPs is a range of IP in dotted notation. You can specify range with the &ndash; (hyphen) and single ip with , (comma). You can also use ; (semicolon)  to  indicate different ip addresses.</p>
+       <p>&nbsp;&nbsp;&nbsp;e.g.</p>
+       <p>&nbsp;&nbsp;&nbsp;<q>10.0.0.1&ndash;5;10.0.1.33</q> expands into ip 10.0.0.1, 2, 3, 4, 5 and 10.0.1.33</p>
+<br>
+       <p>&nbsp;&nbsp;&nbsp;PORTs is a range of PORTS. You can specify range with the &ndash; (hyphen) and single port with , (comma).</p>
+       <p>&nbsp;&nbsp;&nbsp;e.g.</p>
+       <p>&nbsp;&nbsp;&nbsp;<q>20&ndash;25,80,110</q> expands into ports 20, 21, 22, 23, 24, 25, 80 and 110</p>
+<br>
+       <p>&nbsp;&nbsp;&nbsp;<b>NOTE :</b></p>
+       	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;you  can reverse the matching of the TARGET by adding the &ndash;R option to the command line. So if you want to sniff ALL the traffic BUT the one coming or going to 10.0.0.1 you can specify <q>./ettercap &ndash;R /10.0.0.1/</q></p>
+
+       <p>&nbsp;&nbsp;&nbsp;<b>NOTE :</b></p>
+       	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TARGETs are also responsible of the initial scan of the lan. You can use them to restrict the scan to only a subset of the hosts in the netmask.  The  result  of  the merging between the two targets will be scanned. remember that not specifying a target means <q>no target</q>, but specifying <q>//</q> means <q>all the hosts in the subnet</q>.</p>
+
+<br>
+<br>
+
+<h2>Download Link :</h2>
+	 <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://www.ettercap-project.org/downloads.html"><n>Click Here</n></a></p>
+<br><br>
+<n>If you want guide for Use Ettercap to Intercept Passwords with ARP Spoofing :</n> <a href="https://null-byte.wonderhowto.com/how-to/use-ettercap-intercept-passwords-with-arp-spoofing-0191191/"><n>Click Here</n></a><br>
+<br><br>
+<n>If you want Video Tutorial for ettercap :</n> <a href="https://www.youtube.com/channel/UCVYP1AeH9G1E1rtllwxLEQA/videos"><n>Click Here</n></a>
+	
+
+
+
+</ul>
+	
+    
+  </div>
+  
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About us</h2>
+      <p>free ethical hacking course for an enthusiast to learn ethical hacking from begginner to intermediate, By <a href="https://techdogie.blogspot.com/">Techdogie</a> team.</p>
+    </div>
+    <div class="card">
+      <h3>Follow us</h3>
+      <p><a href="https://techdogie.blogspot.com/">Techdogie</a></p>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <h2> <a href="index.html">Home</a></h2>
+</div>
+</body>
+</html>

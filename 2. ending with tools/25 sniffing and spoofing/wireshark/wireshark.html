@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+fieldset {
+  background-color: #eeeeee;
+  width: 90%; 
+   font-size:14px;       
+    
+}
+r {
+  background-color: silver;
+  font-size: 19px;
+  width: 100%;
+   }
+n  {
+     font-size: 20px;
+     }
+code {
+	background-color: #eeeeee;
+          }
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+    font-family: 'Lexend Deca', sans-serif;
+  padding: 20px;
+  margin: 0;
+        width: 100%;
+        height: 20vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 2px;
+  font-size: xx-small;
+  text-align: center;
+  background: white;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+@-webkit-keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+    @keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  background: #ffffff;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+.frame-area {
+  display: block;
+  background: #f1f1f1;
+  width: 100%;  /* RESPONSIVE WIDTH */
+  max-width: auto;
+  height: 750px;
+  overflow: hidden;  /* EDIT TO hidden FOR NO SCROLLBAR */
+  border: #999999 1px solid;
+  margin: 0px;
+  padding: 0px;
+  }
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a href="index.html"><img src="https://1.bp.blogspot.com/-tuZ2JeNu8TY/X2Gjn91qNQI/AAAAAAAAoQs/Yn_Ij5cLcp8qrFL1nPMipYGMXljXOmkBQCK4BGAYYCw/s1600/ronnie.png" class=" square responsive-img materialboxed"></a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn" >
+
+<ul>
+
+
+
+
+
+
+	<center><h1>Wireshark</h1></center>
+	<center><img src="img-wireshark.png" height="400" width="700"/></center>
+<br>
+
+	<p><span style="white-space: pre;">	</span>Wireshark is the world&#39;s foremost and widely&ndash;used network protocol analyzer. It lets you see what&#39;s happening on your network at a microscopic level and is the de facto (and often de jure) standard across many commercial and non&ndash;profit enterprises, government agencies, and educational institutions. Wireshark development thrives thanks to the volunteer contributions of networking experts around the globe and is the continuation of a project started by Gerald Combs in 1998.</p> 
+<br>
+<ul>
+
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;Original author(s) : Gerald Combs</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;Developer(s) : The Wireshark team</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;Initial release : 1998</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;Stable release : 3.4.0 / October 29, 2020</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;Repository : <a href="https://gitlab.com/wireshark/wireshark">gitlab.com/wireshark/wireshark.git</a></p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;Written in : C, C++</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;Operating System : Cross&ndash;platform</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;Type : Packet analyzer</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;License : GPLv2</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;Website : <a href="https://www.wireshark.org/">www.wireshark.org</a></p>
+</ul>
+
+<br>
+
+<h2>Uses of Wireshark :</h2>
+  <p>&nbsp;&nbsp;&nbsp;Wireshark can be used in the following ways :</p>
+
+<ol>
+    <p><li> It is used by network security engineers to examine security problems.</p>
+    <p><li> It allows the users to watch all the traffic being passed over the network.</p>
+    <p><li> It is used by network engineers to troubleshoot network issues.</p>
+    <p><li> It also helps to troubleshoot latency issues and malicious activities on your network.</p>
+    <p><li> It can also analyze dropped packets.</p>
+    <p><li> It helps us to know how all the devices like laptop, mobile phones, desktop, switch, routers, etc., communicate in a local network or the rest of the world.</p>
+
+</ol>
+<br>
+
+<h2>Functionality of Wireshark :</h2>
+
+	<p><span style="white-space: pre;">	</span>Wireshark is similar to tcpdump in networking. Tcpdump is a common packet analyzer which allows the user to display other packets and TCP/IP packets, being transmitted and received over a network attached to the computer. It has a graphic end and some sorting and filtering functions. Wireshark users can see all the traffic passing through the network.</p>
+
+	<p><span style="white-space: pre;">	</span>Wireshark can also monitor the unicast traffic which is not sent to the network&#39;s MAC address interface. But, the switch does not pass all the traffic to the port. Hence, the promiscuous mode is not sufficient to see all the traffic. The various network taps or port mirroring is used to extend capture at any point.</p>
+
+	<p><span style="white-space: pre;">	</span>Port mirroring is a method to monitor network traffic. When it is enabled, the switch sends the copies of all the network packets present at one port to another port.</p>
+
+<br>
+
+<h2>Wireshark has a rich feature set which includes the following : </h2>
+
+<ol>	
+    <p><li> Deep inspection of hundreds of protocols, with more being added all the time.</p>
+    <p><li> Live capture and offline analysis.</p>
+    <p><li> Standard three&ndash;pane packet browser.</p>
+    <p><li> Multi&ndash;platform: Runs on Windows, Linux, macOS, Solaris, FreeBSD, NetBSD, and many others.</p>
+    <p><li> Captured network data can be browsed via a GUI, or via the TTY&ndash;mode TShark utility.</p>
+    <p><li> The most powerful display filters in the industry.</p>
+    <p><li> Rich VoIP analysis.</p>
+    <p><li> Read/write many different capture file formats: tcpdump (libpcap), Pcap NG, Catapult DCT2000, Cisco Secure IDS iplog, Microsoft Network Monitor, Network General Sniffer&reg; (compressed and uncompressed), Sniffer&reg; Pro, and NetXray&reg;, Network Instruments Observer, NetScreen snoop, Novell LANalyzer, RADCOM WAN/LAN Analyzer, Shomiti/Finisar Surveyor, Tektronix K12xx, Visual Networks Visual UpTime, WildPackets EtherPeek/TokenPeek/AiroPeek, and many others.</p>
+    <p><li> Capture files compressed with gzip can be decompressed on the fly.</p>
+    <p><li> Live data can be read from Ethernet, IEEE 802.11, PPP/HDLC, ATM, Bluetooth, USB, Token Ring, Frame Relay, FDDI, and others (depending on your platform).</p>
+    <p><li> Decryption support for many protocols, including IPsec, ISAKMP, Kerberos, SNMPv3, SSL/TLS, WEP, and WPA/WPA2.</p>
+    <p><li> Coloring rules can be applied to the packet list for quick, intuitive analysis.</p>
+    <p><li> Output can be exported to XML, PostScript&reg;, CSV, or plain text.</p>
+</ol>
+
+<br>
+
+<h2>System Requirements :</h2>
+ 	<p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://www.wireshark.org/docs/wsug_html_chunked/ChIntroPlatforms.html"><n>Check Here</n></a></p>
+
+<h2>Download Link :</h2>
+	 <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://www.wireshark.org/#download"><n>Click Here</n></a></p>
+<br><br>
+
+<p><n>If you want more information about Wireshark :</n> <a href="https://www.javatpoint.com/wireshark"><n>Click Here</n></a></p>
+
+<p><n>If you want Video about Wireshark :</n> <a href="https://youtu.be/4_7A8Ikp5Cc"><n>Click Here</n></a></p>
+<br>
+<p><n>Wireshark User&#39;s Guide :</n> <a href="https://www.wireshark.org/docs/wsug_html_chunked/"><n>Click Here</n></a></p>
+
+<br><br>
+
+Source : <a href="https://www.wireshark.org/">www.wireshark.org</a>
+
+
+
+
+</ul>
+	
+    
+  </div>
+  
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About us</h2>
+      <p>free ethical hacking course for an enthusiast to learn ethical hacking from begginner to intermediate, By <a href="https://techdogie.blogspot.com/">Techdogie</a> team.</p>
+    </div>
+    <div class="card">
+      <h3>Follow us</h3>
+      <p><a href="https://techdogie.blogspot.com/">Techdogie</a></p>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <h2> <a href="index.html">Home</a></h2>
+</div>
+</body>
+</html>

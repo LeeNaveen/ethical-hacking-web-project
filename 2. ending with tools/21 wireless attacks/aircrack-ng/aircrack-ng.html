@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+fieldset {
+  background-color: #eeeeee;
+  width: 90%; 
+   font-size:14px;        
+    
+}
+r {
+  background-color: silver;
+  font-size: 19px;
+  width: 100%;
+   }
+n  {
+     font-size: 20px;
+     }
+code {
+	background-color: #eeeeee;
+          }
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+    font-family: 'Lexend Deca', sans-serif;
+  padding: 20px;
+  margin: 0;
+        width: 100%;
+        height: 20vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 2px;
+  font-size: xx-small;
+  text-align: center;
+  background: white;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+@-webkit-keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+    @keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  background: #ffffff;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+.frame-area {
+  display: block;
+  background: #f1f1f1;
+  width: 100%;  /* RESPONSIVE WIDTH */
+  max-width: auto;
+  height: 750px;
+  overflow: hidden;  /* EDIT TO hidden FOR NO SCROLLBAR */
+  border: #999999 1px solid;
+  margin: 0px;
+  padding: 0px;
+  }
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+
+  <a href="index.html"><img src="https://1.bp.blogspot.com/-tuZ2JeNu8TY/X2Gjn91qNQI/AAAAAAAAoQs/Yn_Ij5cLcp8qrFL1nPMipYGMXljXOmkBQCK4BGAYYCw/s1600/ronnie.png" class=" square responsive-img materialboxed"></a>
+
+</div>
+
+<div class="row">
+
+  <div class="leftcolumn" >
+
+
+
+
+
+
+
+<ul>
+<center><h1><p>Aircrack&ndash;ng Description</p></h1></center>
+
+<center><img src="img-aircrack-ng.jpg" height="350" width="500" /></center>
+
+<p><br /></p>
+
+<p><span style="white-space: pre;">	</span>Aircrack&ndash;ng is an 802.11 WEP and WPA/WPA2&ndash;PSK key cracking program.</p>
+
+
+
+<p><span style="white-space: pre;">	</span>Aircrack&ndash;ng can recover the WEP key once enough encrypted packets have been captured with <a href="https://www.aircrack-ng.org/doku.php?id=airodump-ng">airodump&ndash;ng</a>. This part of the aircrack&ndash;ng suite determines the WEP key using two fundamental methods. The first method is via the PTW approach (Pyshkin, Tews, Weinmann). The default cracking method is PTW. This is done in two phases. In the first phase, aircrack&ndash;ng only uses ARP packets. If the key is not found, then it uses all the packets in the capture. Please remember that not all packets can be used for the PTW method. This <a href="https://www.aircrack-ng.org/doku.php?id=supported_packets">Tutorial: Packets Supported for the PTW Attack page</a> provides details. An important limitation is that the PTW attack currently can only crack 40 and 104 bit WEP keys. The main advantage of the PTW approach is that very few data packets are required to crack the WEP key.</p>
+
+
+
+<p><span style="white-space: pre;">	</span>The other, older method is the FMS/KoreK method. The FMS/KoreK method incorporates various statistical attacks to discover the WEP key and uses these in combination with brute forcing. It requires more packets than PTW, but on the other hand is able to recover the passphrase when PTW sometimes fail.</p>
+
+
+
+
+<p><span style="white-space: pre;">	</span>Additionally, the program offers a dictionary method for determining the WEP key.</p>
+
+
+
+<p><span style="white-space: pre;">	</span>For cracking WPA/WPA2 pre&ndash;shared keys, only a dictionary method is used. A <q>four&ndash;way handshake</q> is required as input. For WPA handshakes, a full handshake is composed of four packets. However, aircrack&ndash;ng is able to work successfully with just 2 packets. EAPOL packets (2 and 3) or packets (3 and 4) are considered a full handshake.</p>
+
+
+
+
+<p><span style="white-space: pre;">	</span>SSE2, AVX, AVX2, and AVX512 support is included to dramatically speed up WPA/WPA2 key processing. With the exception of AVX512, all other instructions are built&ndash;in Aircrack&ndash;ng, and it will automatically select the fastest available for the CPU. For non&ndash;x86 CPUs, SIMD improvements are present as well.</p>
+
+
+
+<p><br /></p>
+
+<p><span style="white-space: pre;">	</span>
+Developer(s) : Thomas d&#39;Otreppe de Bouvette</p>
+
+<p><p><span style="white-space: pre;">	</span>
+Stable release : 1.6 / January 25, 2020</p>
+
+<p><span style="white-space: pre;">	</span>
+Repository : <a href="https://github.com/aircrack-ng/aircrack-ng">github.com/aircrack&ndash;ng/aircrack&ndash;ng</a></p>
+
+<p><span style="white-space: pre;">	</span>
+Written in : C</p>
+
+<p><span style="white-space: pre;">	</span>
+Operating System : Cross&ndash;platform</p>
+
+<p><span style="white-space: pre;">	</span>
+Type : Packet sniffer and injector; WEP encryption key recovery</p>
+
+<p><span style="white-space: pre;">	</span>
+License : GPL</p>
+
+<p><span style="white-space: pre;">	</span>
+Website : <a href="https://www.aircrack-ng.org/doku.php?id=aircrack-ng">aircrack&ndash;ng.org</a></p>
+
+
+
+<p><br /></p>
+
+<h2><p>aircrack&ndash;ng &mdash; an 802.11 WEP and WPA/WPA2&ndash;PSK key cracking program :</p></h2>
+
+<br>
+
+
+
+
+<fieldset>
+<code>
+
+<p>root@kali:~# aircrack&ndash;ng &ndash;&ndash;help</p>
+
+<p><br /></p>
+<p>&nbsp; Aircrack&ndash;ng 1.5.2 &ndash; (C) 2006&ndash;2018 Thomas d&#39;Otreppe</p>
+<p>&nbsp; https://www.aircrack&ndash;ng.org</p>
+<p><br /></p>
+
+<p>&nbsp; usage: aircrack&ndash;ng [options] &lt;.cap / .ivs file(s)&gt;</p>
+<p><br /></p>
+
+<p>&nbsp; Common options:</p>
+<p><br /></p>
+
+<p>&nbsp; &nbsp; &nbsp; -a &lt;amode&gt; : force attack mode (1/WEP, 2/WPA-PSK)</p>
+
+<p>&nbsp; &nbsp; &nbsp; -e &lt;essid&gt; : target selection: network identifier</p>
+
+<p>&nbsp; &nbsp; &nbsp; -b &lt;bssid&gt; : target selection: access point's MAC</p>
+
+<p>&nbsp; &nbsp; &nbsp; -p &lt;nbcpu&gt; : # of CPU to use&nbsp; (default: all CPUs)</p>
+
+<p>&nbsp; &nbsp; &nbsp; -q&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: enable quiet mode (no status output)</p>
+
+<p>&nbsp; &nbsp; &nbsp; -C &lt;macs&gt;&nbsp; : merge the given APs to a virtual one</p>
+
+<p>&nbsp; &nbsp; &nbsp; -l &lt;file&gt;&nbsp; : write key to file. Overwrites file.</p>
+<p><br /></p>
+
+<p>&nbsp; Static WEP cracking options:</p>
+<p><br /></p>
+
+<p>&nbsp; &nbsp; &nbsp; -c&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: search alpha-numeric characters only</p>
+<p>&nbsp; &nbsp; &nbsp; -t&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: search binary coded decimal chr only</p>
+<p>&nbsp; &nbsp; &nbsp; -h&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: search the numeric key for Fritz!BOX</p>
+<p>&nbsp; &nbsp; &nbsp; -d &lt;mask&gt;&nbsp; : use masking of the key (A1:XX:CF:YY)</p>
+<p>&nbsp; &nbsp; &nbsp; -m &lt;maddr&gt; : MAC address to filter usable packets</p>
+<p>&nbsp; &nbsp; &nbsp; -n &lt;nbits&gt; : WEP key length :&nbsp; 64/128/152/256/512</p>
+<p>&nbsp; &nbsp; &nbsp; -i &lt;index&gt; : WEP key index (1 to 4), default: any</p>
+<p>&nbsp; &nbsp; &nbsp; -f &lt;fudge&gt; : bruteforce fudge factor,&nbsp; default: 2</p>
+<p>&nbsp; &nbsp; &nbsp; -k &lt;korek&gt; : disable one attack method&nbsp; (1 to 17)</p>
+<p>&nbsp; &nbsp; &nbsp; -x or -x0&nbsp; : disable bruteforce for last keybytes</p>
+<p>&nbsp; &nbsp; &nbsp; -x1&nbsp; &nbsp; &nbsp; &nbsp; : last keybyte bruteforcing&nbsp; (default)</p>
+<p>&nbsp; &nbsp; &nbsp; -x2&nbsp; &nbsp; &nbsp; &nbsp; : enable last&nbsp; 2 keybytes bruteforcing</p>
+<p>&nbsp; &nbsp; &nbsp; -X&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: disable&nbsp; bruteforce&nbsp; &nbsp;multithreading</p>
+<p>&nbsp; &nbsp; &nbsp; -y&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: experimental&nbsp; single bruteforce mode</p>
+<p>&nbsp; &nbsp; &nbsp; -K&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: use only old KoreK attacks (pre-PTW)</p>
+<p>&nbsp; &nbsp; &nbsp; -s&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: show the key in ASCII while cracking</p>
+<p>&nbsp; &nbsp; &nbsp; -M &lt;num&gt;&nbsp; &nbsp;: specify maximum number of IVs to use</p>
+<p>&nbsp; &nbsp; &nbsp; -D&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: WEP decloak, skips broken keystreams</p>
+<p>&nbsp; &nbsp; &nbsp; -P &lt;num&gt;&nbsp; &nbsp;: PTW debug:&nbsp; 1: disable Klein, 2: PTW</p>
+<p>&nbsp; &nbsp; &nbsp; -1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: run only 1 try to crack key with PTW</p>
+<p>&nbsp; &nbsp; &nbsp; -V&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: run in visual inspection mode</p>
+
+<p><br /></p>
+
+<p>&nbsp; WEP and WPA&ndash;PSK cracking options:</p>
+<p><br /></p>
+<p>&nbsp; &nbsp; &nbsp; &ndash;w &lt;words&gt; : path to wordlist(s) filename(s)</p>
+
+<p>&nbsp; &nbsp; &nbsp; &ndash;N &lt;file&gt;&nbsp; : path to new session filename</p>
+<p>&nbsp; &nbsp; &nbsp; &ndash;R &lt;file&gt;&nbsp; : path to existing session filename</p>
+<p><br /></p>
+
+<p>&nbsp; WPA&ndash;PSK options:</p>
+<p><br /></p>
+
+<p>&nbsp; &nbsp; &nbsp; &ndash;E &lt;file&gt;&nbsp; : create EWSA Project file v3</p>
+<p>&nbsp; &nbsp; &nbsp; &ndash;j &lt;file&gt;&nbsp; : create Hashcat v3.6+ file (HCCAPX)</p>
+
+<p>&nbsp; &nbsp; &nbsp; -J &lt;file&gt;&nbsp; : create Hashcat file (HCCAP)</p>
+
+<p>&nbsp; &nbsp; &nbsp; -S&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: WPA cracking speed test</p>
+<p>&nbsp; &nbsp; &nbsp; -Z &lt;sec&gt;&nbsp; &nbsp;: WPA cracking speed test length of</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;execution.</p>
+<p>&nbsp; &nbsp; &nbsp; -r &lt;DB&gt;&nbsp; &nbsp; : path to airolib-ng database</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(Cannot be used with -w)</p>
+
+<p><br /></p>
+<p>&nbsp; SIMD selection:</p>
+<p><br /></p>
+<p>&nbsp; &nbsp; &nbsp; --simd-list&nbsp; &nbsp; &nbsp; &nbsp;: Show a list of the available</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; SIMD architectures, for this</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; machine.</p>
+<p>&nbsp; &nbsp; &nbsp; --simd=&lt;option&gt;&nbsp; &nbsp;: Use specific SIMD architecture.</p>
+
+<p><br /></p>
+<p>&nbsp; &nbsp; &nbsp; &lt;option&gt; may be one of the following, depending on</p>
+<p>&nbsp; &nbsp; &nbsp; your platform:</p>
+
+<p><br /></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;generic</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;avx512</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;avx2</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;avx</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;sse2</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;altivec</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;power8</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;asimd</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;neon</p>
+<p><br /></p>
+
+<p>&nbsp; Other options:</p>
+<p><br /></p>
+
+<p>&nbsp; &nbsp; &nbsp; &ndash;u&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: Displays # of CPUs &amp; MMX/SSE support</p>
+<p>&nbsp; &nbsp; &nbsp; &ndash;&ndash;help&nbsp; &nbsp; &nbsp;: Displays this usage screen</p>
+
+</code>
+</fieldset>
+
+
+
+<br>
+<h2><p>aircrack&ndash;ng Usage Examples :</p></h2>
+
+<b><p><span style="white-space: pre;">	</span>
+
+WPA Wordlist Mode</p></b>
+
+
+<p>Specify the wordlist to use (&ndash;w password.lst) and the path to the capture file (wpa.cap) containing at least one 4&ndash;way handshake.</p>
+
+
+<br>
+<fieldset>
+<code>
+
+<p>root@kali:~# aircrack&ndash;ng &ndash;w password.lst wpa.cap</p>
+<p><br /></p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Aircrack-ng 1.5.2</p>
+<p><br /></p>
+
+<p>&nbsp; &nbsp; &nbsp; [00:00:00] 232/233 keys tested (1992.58 k/s)</p>
+<p><br /></p>
+
+<p>&nbsp; &nbsp; &nbsp; Time left: 0 seconds&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 99.57%</p>
+
+<p><br /></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;KEY FOUND! [ biscotte ]</p>
+
+<p><br /></p><p><br /></p>
+<p>&nbsp; &nbsp; &nbsp; Master Key&nbsp; &nbsp; &nbsp;: CD D7 9A 5A CF B0 70 C7 E9 D1 02 3B 87 02 85 D6</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;39 E4 30 B3 2F 31 AA 37 AC 82 5A 55 B5 55 24 EE</p>
+
+<p><br /></p>
+<p>&nbsp; &nbsp; &nbsp; Transient Key&nbsp; : 33 55 0B FC 4F 24 84 F4 9A 38 B3 D0 89 83 D2 49</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;73 F9 DE 89 67 A6 6D 2B 8E 46 2C 07 47 6A CE 08</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;AD FB 65 D6 13 A9 9F 2C 65 E4 A6 08 F2 5A 67 97</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;D9 6F 76 5B 8C D3 DF 13 2F BC DA 6A 6E D9 62 CD</p>
+<p><br /></p>
+
+<p>&nbsp; &nbsp; &nbsp; EAPOL HMAC&nbsp; &nbsp; &nbsp;: 28 A8 C8 95 B7 17 E5 72 27 B6 A7 EE E3 E5 34 45</p>
+
+</code>
+</fieldset>
+
+<p><br /></p>
+
+
+<h2><p>Basic WEP Cracking :</p></h2>
+
+<p><span style="white-space: pre;">	</span>
+
+To have aircrack&ndash;ng conduct a WEP key attack on a capture file, pass it the filename, either in .ivs or .cap/.pcap format.</p>
+<br>
+
+
+<fieldset>
+<code>
+
+<p>root@kali:~# aircrack&ndash;ng all&ndash;ivs.ivs</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Aircrack&ndash;ng 1.4</p>
+<p><br /></p><p><br /></p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[00:00:00] Tested 1514 keys (got 30566 IVs)</p>
+<p><br /></p>
+<p>&nbsp; &nbsp;KB&nbsp; &nbsp; depth&nbsp; &nbsp;byte(vote)</p>
+
+<p>&nbsp; &nbsp; 0&nbsp; &nbsp; 0/&nbsp; 9&nbsp; &nbsp;1F(39680) 4E(38400) 14(37376) 5C(37376) 9D(37376)</p>
+
+<p>&nbsp; &nbsp; 1&nbsp; &nbsp; 7/&nbsp; 9&nbsp; &nbsp;64(36608) 3E(36352) 34(36096) 46(36096) BA(36096)</p>
+
+<p>&nbsp; &nbsp; 2&nbsp; &nbsp; 0/&nbsp; 1&nbsp; &nbsp;1F(46592) 6E(38400) 81(37376) 79(36864) AD(36864)</p>
+<p>&nbsp; &nbsp; 3&nbsp; &nbsp; 0/&nbsp; 3&nbsp; &nbsp;1F(40960) 15(38656) 7B(38400) BB(37888) 5C(37632)</p>
+<p>&nbsp; &nbsp; 4&nbsp; &nbsp; 0/&nbsp; 7&nbsp; &nbsp;1F(39168) 23(38144) 97(37120) 59(36608) 13(36352)</p>
+<p><br /></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;KEY FOUND! [ 1F:1F:1F:1F:1F ]</p>
+
+<p>&nbsp; &nbsp; Decrypted correctly: 100%</p>
+
+
+</code>
+</fieldset>
+
+<br>
+
+<h3><p>Download Link :</p></h3>
+<p><span style="white-space: pre;">	</span>
+You can download the latest tarbal <a href="https://download.aircrack-ng.org/aircrack-ng-1.6.tar.gz">Here</a></p>
+
+<p><span style="white-space: pre;">	</span>
+
+You can download aircrack&ndash;ng by cloning the Git repository&nbsp;</p>
+
+
+<p><code>&nbsp;git clone https://github.com/aircrack&ndash;ng/aircrack&ndash;ng&nbsp;</code></p>
+<p><br /></p>
+
+<p><n>If you want video about Hacking WiFi Network WPA/WPA2 using aircrack&ndash;ng :
+		<a href="https://youtu.be/V3Sn9oTlVcs"> Click Here </a></n></p>
+
+<p><br /></p>
+
+<p>Source : <a href="https://tools.kali.org/wireless-attacks/aircrack-ng">kali.org</a></p>
+
+</ul>
+
+
+
+
+
+ </div>
+  
+</ol>
+
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About us</h2>
+      <p>free ethical hacking course for an enthusiast to learn ethical hacking from beginner to intermediate, By <a href="https://techdogie.blogspot.com/">Techdogie</a> team.</p>
+    </div>
+    <div class="card">
+      <h3>Follow us</h3>
+      <p><a href="https://techdogie.blogspot.com/">Techdogie</a></p>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <h2> <a href="index.html">Home</a></h2>
+</div>
+</body>
+</html>

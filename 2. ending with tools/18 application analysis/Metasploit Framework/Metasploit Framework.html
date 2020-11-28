@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+fieldset {
+  background-color: #eeeeee;
+  width: 90%; 
+   font-size:14px;        
+    
+}
+r {
+  background-color: silver;
+  font-size: 19px;
+  width: 100%;
+   }
+n  {
+     font-size: 20px;
+     }
+code {
+	background-color: #eeeeee;
+         }
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+    font-family: 'Lexend Deca', sans-serif;
+  padding: 20px;
+  margin: 0;
+        width: 100%;
+        height: 20vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 2px;
+  font-size: xx-small;
+  text-align: center;
+  background: white;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+@-webkit-keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+    @keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  background: #ffffff;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+.frame-area {
+  display: block;
+  background: #f1f1f1;
+  width: 100%;  /* RESPONSIVE WIDTH */
+  max-width: auto;
+  height: 750px;
+  overflow: hidden;  /* EDIT TO hidden FOR NO SCROLLBAR */
+  border: #999999 1px solid;
+  margin: 0px;
+  padding: 0px;
+  }
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+
+  <a href="index.html"><img src="https://1.bp.blogspot.com/-tuZ2JeNu8TY/X2Gjn91qNQI/AAAAAAAAoQs/Yn_Ij5cLcp8qrFL1nPMipYGMXljXOmkBQCK4BGAYYCw/s1600/ronnie.png" class=" square responsive-img materialboxed"></a>
+
+</div>
+
+<div class="row">
+
+  <div class="leftcolumn" >
+
+
+
+
+<ul>
+
+
+
+
+
+
+<center><h1>Metasploit Framework</h1></center>
+
+<center><img src="img-msf.png" height="400" width="600"/></center>
+
+	<p><span style="white-space: pre;">	</span>
+	The Metasploit Framework is a Ruby&ndash;based, modular penetration testing platform that enables you to write, test, and execute exploit code. The Metasploit Framework contains a suite of tools that you can use to test security vulnerabilities, enumerate networks, execute attacks, and evade detection. At its core, the Metasploit Framework is a collection of commonly used tools that provide a complete environment for penetration testing and exploit development.</p>
+<br>
+
+	<p><span style="white-space: pre;">	</span>
+	Developer(s) : Rapid7 LLC</p>
+
+	<p><span style="white-space: pre;">	</span>
+	Stable release : 6.0.1 / August 13, 2020</p>
+
+	<p><span style="white-space: pre;">	</span>
+	Repository	: <a href="https://github.com/rapid7/metasploit-framework">github.com/rapid7/metasploit&ndash;framework</a></p>
+
+	<p><span style="white-space: pre;">	</span>
+	Written in : Ruby</p>
+
+	<p><span style="white-space: pre;">	</span>
+	Operating system : Cross&ndash;platform</p>
+
+	<p><span style="white-space: pre;">	</span>
+	Type : Security</p>
+
+	<p><span style="white-space: pre;">	</span>
+	License : Framework: BSD, Community/Express/Pro: Proprietary</p>
+
+	<p><span style="white-space: pre;">	</span>
+	Website : <a href="https://www.metasploit.com/">www.metasploit.com</a></p>
+<br>
+
+
+
+	<h2>Accessing MSFconsole :</h2>
+
+	<p><span style="white-space: pre;">	</span>
+	MSFconsole provides a command line interface to access and work with the Metasploit Framework. The MSFconsole is the most commonly used interface to work with the Metasploit Framework. The console lets you do things like scan targets, exploit vulnerabilities, and collect data.</p>
+
+
+
+	<h2>Accessing MSFconsole on Linux :</h2>
+	
+
+	
+	&emsp;&emsp;<n>To run MSFconsole on Linux, open a terminal, cd into the framework directory and type:</n>	<br><br>
+
+			&emsp;&emsp;&emsp;&emsp;<code>&nbsp;$ ./msfconsole&emsp;</code>	<br><br>
+
+
+   	 &emsp;&emsp;<n>If all goes well, you'll see the following prompt:</n>	<br>
+
+<br>
+		<center><img src="img1-msf-console.png" height="300" width="500"/></center>
+<br>
+
+	<p><span style="white-space: pre;">	</span>
+	However, if this is first time you are accessing the console, you may see an error indicating that you are missing some gems. To fix this error, run <r>&nbsp;bundle install&nbsp;</r> to grab those gems.</p>
+<br>
+	<p><span style="white-space: pre;">	</span>
+	To run bundle install, simply type:</p>
+
+		&emsp;&emsp;&emsp;&emsp;<code>&nbsp;$ bundle install&nbsp;</code>		<br><br>
+
+	<p><span style="white-space: pre;">	</span>
+	After you run bundle install, you can try to launch the console again by retyping <code>&nbsp;./msfconsole&nbsp;</code>.</p>
+
+
+<h2>Getting Help for MSFconsole Commands :</h2>
+
+	<p><span style="white-space: pre;">   </span>
+	<n>To view help while you are in the console, use the following commands:</n></p>
+
+<ul style="list-style-type:disc">
+   <p> <li>Type <r><n>&nbsp;help&nbsp;</n></r> to display a list of valid commands for the current mode. While you are in the main mode, the system displays help for the global commands that are available. When you are in the module mode, the system displays the help for the commands and options that are available for the module.</p>
+   <p> <li>Type <r>&nbsp;info &lt;module name&gt;&nbsp;</r> to view the options for a module.</p>
+</ul>
+<br>
+
+<h2>Finding Modules :</h2>
+
+	<p><span style="white-space: pre;">	</span>
+	Modules are the core components of the Metasploit Framework. A module is a piece of software that can perform a specific action, such as scanning or exploiting. Each task that you can perform with the Metasploit Framework is defined within a module.</p>
+
+	<p><span style="white-space: pre;">	</span>
+	You can locate modules in the following directory: <r>&nbsp;/path/to/metasploit/ apps/pro/msf3/ modules&nbsp;</r> if you installed Metasploit using the binaries or <r>&nbsp;/path/to/ metasploit&ndash;framework&ndash;repo/ modules&nbsp;</r> if you cloned the repository from GitHub. The modules are categorized by type and then by protocol.</p>
+
+	<p><span style="white-space: pre;">	</span>
+	There are a few types of modules. The module type depends on the purpose of the module and the type of action that the module performs. The following are module types that are available in the Metasploit Framework:</p>
+
+<ul style="list-style-type:disc">
+    <p><li> <b>Exploit</b> &ndash; An exploit module executes a sequence of commands to target a specific vulnerability found in a system or application. An exploit module takes advantage of a vulnerability to provide access to the target system. Exploit modules include buffer overflow, code injection, and web application exploits.</p>
+
+   <p> <li> <b>Auxiliary</b> &ndash; An auxiliary module does not execute a payload. It can be used to perform arbitrary actions that may not be directly related to exploitation. Examples of auxiliary modules include scanners, fuzzers, and denial of service attacks.</p>
+
+    <p><li> <b>Post&ndash;Exploitation</b> &ndash; A post-exploitation module enables you to gather more information or to gain further access to an exploited target system. Examples of post-exploitation modules include hash dumps and application and service enumerators.</p>
+
+    <p><li> <b>Payload</b> &ndash; A payload is the shell code that runs after an exploit successfully compromises a system. The payload enables you to define how you want to connect to the shell and what you want to do to the target system after you take control of it. A payload can open a Meterpreter or command shell. Meterpreter is an advanced payload that allows you to write DLL files to dynamically create new features as you need them.</p>
+
+    <p><li> <b>NOP generator</b> &ndash; A NOP generator produces a series of random bytes that you can use to bypass standard IDS and IPS NOP sled signatures. Use NOP generators to pad buffers.</p>
+</ul>
+<br>
+
+<h2>Datastore :</h2>
+
+	<p><span style="white-space: pre;">	</span>
+	The datastore is a core component of the Metasploit Framework. The datastore is a table of named values that enables you to configure the behavior of the components within the Metasploit Framework. The datastore enables the interfaces to configure settings, the payloads to patch opcodes, and the exploits to define parameters. The datastore also enables the Metasploit Framework to internally pass options between modules.</p>
+
+  	<p><span style="white-space: pre;">    </span>
+	There are two types of datastores :</p>
+
+<ul style="list-style-type:disc">
+    <p><li> <b>Global datastore</b> &ndash; To define a global datastore option, use setg. All modules will be able to use the datastore option.</p>
+    <p><li> <b>Module datastore</b> &ndash; To define a module level datastore option, use set. Only the module that you define the datastore option for can use it.</p>
+</ul>
+<br>
+
+<h2>Download Link : </h2>
+	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;	
+	<a href="https://www.rapid7.com/products/metasploit/download/"><img src="Click-Here.png" height="200" width="200"/></a>	<br>
+<br><br>
+
+<p><n>If you want Installing the Metasploit Framework guide, <a href="https://docs.rapid7.com/metasploit/installing-the-metasploit-framework/">Click Here</a></n></p>
+
+
+<p><n>If you want Video Tutorial about Metasploit Framework, <a href="https://www.youtube.com/c/MetasploitR7/playlists">Click Here</a></n><br>
+<br><br>
+
+Source : <a href="https://docs.rapid7.com/metasploit/msf-overview">rapid7.com</a>
+
+
+
+
+</ul>
+
+
+
+ </div>
+  
+</ol>
+
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About us</h2>
+      <p>free ethical hacking course for an enthusiast to learn ethical hacking from beginner to intermediate, By <a href="https://techdogie.blogspot.com/">Techdogie</a> team.</p>
+    </div>
+    <div class="card">
+      <h3>Follow us</h3>
+      <p><a href="https://techdogie.blogspot.com/">Techdogie</a></p>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <h2> <a href="index.html">Home</a></h2>
+</div>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+fieldset {
+  background-color: #eeeeee;
+  width: 90%; 
+   font-size:14px;       
+    
+}
+r {
+  background-color: silver;
+  font-size: 19px;
+  width: 100%;
+   }
+n  {
+     font-size: 20px;
+     }
+code {
+	background-color: silver;
+          }
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+    font-family: 'Lexend Deca', sans-serif;
+  padding: 20px;
+  margin: 0;
+        width: 100%;
+        height: 20vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 2px;
+  font-size: xx-small;
+  text-align: center;
+  background: white;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+@-webkit-keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+    @keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  background: #ffffff;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+.frame-area {
+  display: block;
+  background: #f1f1f1;
+  width: 100%;  /* RESPONSIVE WIDTH */
+  max-width: auto;
+  height: 750px;
+  overflow: hidden;  /* EDIT TO hidden FOR NO SCROLLBAR */
+  border: #999999 1px solid;
+  margin: 0px;
+  padding: 0px;
+  }
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a href="index.html"><img src="https://1.bp.blogspot.com/-tuZ2JeNu8TY/X2Gjn91qNQI/AAAAAAAAoQs/Yn_Ij5cLcp8qrFL1nPMipYGMXljXOmkBQCK4BGAYYCw/s1600/ronnie.png" class=" square responsive-img materialboxed"></a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn" >
+
+<ul>
+	<center><h1>Apktool</h1></center>
+
+    <p style="text-align:justify"><center><img src="img-apktool.png" height="300" width=600" class=" square responsive-img materialboxed "></center>
+	
+
+	<p><span style="white-space: pre;">	</span>A tool for reverse engineering 3rd party, closed, binary Android apps. It can decode resources to nearly original form and rebuild them after making some modifications. It also makes working with an app easier because of the project like file structure and automation of some repetitive tasks like building apk, etc.</p>
+
+	<p><span style="white-space: pre;">	</span>It is NOT intended for piracy and other non&ndash;legal uses. It could be used for localizing, adding some features or support for custom platforms, analyzing applications and much more.</p>
+	
+<br>	
+	
+	<h2>Features :</h2>
+	<ul style="list-style-type: disc">
+	
+	<p><li>Disassembling resources to nearly original form (including resources.arsc, classes.dex, 9.png. and XMLs)</p>
+	<p><li>Rebuilding decoded resources back to binary APK/JAR</p>
+	<p><li>Organizing and handling APKs that depend on framework resources</p>
+	<p><li>Smali Debugging (Removed in 2.1.0 in favor of <a href="https://github.com/JesusFreke/smali/wiki/smalidea">IdeaSmali</a>)</p>
+	<p><li>Helping with repetitive tasks</p>
+	</ul>
+<br>	
+	<h3>Requirements</h3>
+	<ul style="list-style-type: disc">
+	<p><li>Java 8 (JRE 1.8)</p>
+	<p><li>Basic knowledge of Android SDK, AAPT and smali</p>
+	</ul>
+<br>
+	<h2>Download and Install Instructions :</h2>
+	<p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://ibotpeaches.github.io/Apktool/install/"><img src="click-here.png" height="200" width="200"/></a></p>
+	<br>
+	
+
+	<h2>apktool Usage Example :</h2>
+		<p>&emsp;&emsp;Use debug mode <n>(d)</n> to decode the given apk file <n>(/root/SdkApp.apk)</n> :</p>
+
+<fieldset>	
+		<code><p>root@kali:~# apktool d Facebook\ Lite_apkpure.com.apk</p><br>
+		<p>I: Using Apktool 2.3.4-dirty on Facebook Lite_apkpure.com.apk</p>
+		<p>I: Loading resource table...</p>
+		<p>I: Decoding AndroidManifest.xml with resources...</p>
+		<p>I: Loading resource table from file: /root/ .local/share/ apktool/ framework/1.apk</p>
+		<p>I: Regular manifest package...</p>
+		<p>I: Decoding file-resources...</p>
+		<p>I: Decoding values */* XMLs...</p>
+		<p>I: Baksmaling classes.dex...</p>
+		<p>I: Copying assets and libs...</p>
+		<p>I: Copying unknown files...</p>
+		<p>I: Copying original files...</p></code><p></p>
+	
+</fieldset>
+	
+<br>
+	<h2>Documentation :</h2>
+	<p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://ibotpeaches.github.io/Apktool/documentation/"><n>Click Here</n></a></p>
+<br>
+	
+	<p><n>If you want Video about Apktool(Decompile/Recompile &ndash; apk files) :</n> <a href="https://youtu.be/F__tSmTGh7I"><n>Click Here</n></a></p>
+	
+<br><br>
+	Source : <a href="https://tools.kali.org/reverse-engineering/apktool">Click here</a>
+
+	</ul>
+	</p>
+    
+  </div>
+  
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About us</h2>
+      <p>free ethical hacking course for an enthusiast to learn ethical hacking from begginner to intermediate, By <a href="https://techdogie.blogspot.com/">Techdogie</a> team.</p>
+    </div>
+    <div class="card">
+      <h3>Follow us</h3>
+      <p><a href="https://techdogie.blogspot.com/">Techdogie</a></p>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <h2> <a href="index.html">Home</a></h2>
+</div>
+</body>
+</html>

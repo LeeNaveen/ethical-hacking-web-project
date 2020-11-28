@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+r {
+  background-color: silver;
+  font-size: 19px;
+  width: 100%;
+   }
+n  {
+     font-size: 20px;
+     }
+code {
+	background-color: #eeeeee;
+          }
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+    font-family: 'Lexend Deca', sans-serif;
+  padding: 20px;
+  margin: 0;
+        width: 100%;
+        height: 20vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 2px;
+  font-size: xx-small;
+  text-align: center;
+  background: white;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+@-webkit-keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+    @keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  background: #ffffff;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+.frame-area {
+  display: block;
+  background: #f1f1f1;
+  width: 100%;  /* RESPONSIVE WIDTH */
+  max-width: auto;
+  height: 750px;
+  overflow: hidden;  /* EDIT TO hidden FOR NO SCROLLBAR */
+  border: #999999 1px solid;
+  margin: 0px;
+  padding: 0px;
+  }
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+
+  <a href="index.html"><img src="https://1.bp.blogspot.com/-tuZ2JeNu8TY/X2Gjn91qNQI/AAAAAAAAoQs/Yn_Ij5cLcp8qrFL1nPMipYGMXljXOmkBQCK4BGAYYCw/s1600/ronnie.png" class=" square responsive-img materialboxed"></a>
+
+</div>
+
+<div class="row">
+
+  <div class="leftcolumn" >
+ 
+<ul>
+
+<center> <h1>  <p>&nbsp;Nmap</p> </h1></center>
+
+<center><img src="img-nmap.jpg" height="300" width="500"/></center>
+
+<p><span style="white-space: pre;">	</span>
+Nmap (<q>Network Mapper</q>) is a free and open source utility for network discovery and security auditing.</p>
+
+<p>&nbsp;<span style="white-space: pre;">	</span>
+Many systems and network administrators also find it useful for tasks such as network inventory, managing service upgrade schedules, and monitoring host or service uptime.</p>
+
+<p><span style="white-space: pre;">	</span> 
+Nmap uses raw IP packets in novel ways to determine what hosts are available on the network, what services (application name and version) those hosts are offering, what operating systems (and OS versions) they are running, what type of packet filters/firewalls are in use, and dozens of other characteristics.</p>
+
+<p><span style="white-space: pre;">	</span>
+Nmap runs on all major computer operating systems, and official binary packages are available for Linux, Windows, and Mac OS X.</p>
+
+<p><br /></p>
+
+<ul><ul>
+<p>Original author(s) : Gordon Lyon (Fyodor)</p>
+<p>Initial release : September 1997</p>
+<p>Repository : <a href="https://github.com/nmap/nmap">github.com/nmap/nmap</a></p>
+<p>Written in : C, C++, Python, Lua</p>
+<p>Operating system : Cross&ndash;platform</p>
+<p>Type : Network security</p>
+<p>License : Modified GPLv2</p>
+<p>Website : <a href="https://nmap.org/">nmap.org</a></p>
+<p><br /></p>
+
+</ul></ul>
+</ul>
+
+<ol>
+
+<h2><p>&nbsp;Nmap is ...&nbsp;</p></h2>
+
+<ol>
+
+<p><h3><li>&nbsp;Flexible :</h3></p>
+
+<p><span style="white-space: pre;">	</span>
+Nmap supports dozens of advanced techniques for mapping out networks filled with IP filters, firewalls, routers, and other obstacles. This includes many port scanning mechanisms (both TCP &amp; UDP), OS detection, version detection, ping sweeps, and more.</p></li>
+
+
+<p><h3><li>&nbsp;Powerful :&nbsp;</h3></p>
+<p><span style="white-space: pre;">	</span>
+ Nmap has been used to scan huge networks of literally hundreds of thousands of machines.&nbsp;</p></li>
+
+
+<p><h3><li>&nbsp;Portable :</h3></p>
+<p><span style="white-space: pre;">	</span>
+ Most operating systems are supported, including Linux, Microsoft Windows, FreeBSD, OpenBSD, Solaris, IRIX, Mac OS X, HP&ndash;UX, NetBSD, Sun OS, Amiga, and more.&nbsp;</p></li>
+
+
+<p><h3><li>&nbsp;Easy :</p></h3>
+<p><span style="white-space: pre;">	</span>
+While Nmap offers a rich set of advanced features for power users, you can start out as simply as <	q>nmap &ndash;v &ndash;A targethost</q>. Both traditional command line and graphical (GUI) versions are available to suit your preference.</p></li>
+
+
+
+<p><h3><li>&nbsp;Free :</p></h3>
+<p><span style="white-space: pre;">	</span>
+The primary goals of the Nmap Project is to help make the Internet a little more secure and to provide administrators/auditors/hackers with an advanced tool for exploring their networks. Nmap is available for free download.&nbsp;</p></li>
+
+
+<p><h3><li>&nbsp;Popular :</p></h3>
+<p><span style="white-space: pre;">	</span>
+Thousands of people download Nmap every day, and it is included with many operating systems (Redhat Linux, Debian Linux, Gentoo, FreeBSD, OpenBSD, etc). It is among the top ten (out of 30,000) programs at the Freshmeat.Net repository.</p></li>
+
+</ol></ol>
+
+
+<p><br /></p>
+
+<ol>
+
+
+<h2>Download Link :</h2>
+	<p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://nmap.org/download.html"><big>Click Here</big></a>  <span style="white-space: pre;">	</span></p>
+
+<p><br /></p>
+
+<p><n>If you want video tutorial about how to scan network vulnurabilities using Nmap tool, <a href="https://youtu.be/aCC1O9hSzWo"> Click Here</a></n></p>
+
+<p><br /></p>
+
+
+</ol>
+
+
+<ol>
+
+<center>
+<br>
+<h1><p><u>Here is a small Introduction to Zenmap</u> </p></h1>
+
+<img src="img-zenmap.png" height="200" width="400">
+</center>
+<br>
+<p><span style="white-space: pre;">	</span>
+Zenmap is the official Nmap Security Scanner GUI. It is a multi&ndash;platform (Linux, Windows, Mac OS X, BSD, etc.) free and open source application which aims to make Nmap easy for beginners to use while providing advanced features for experienced Nmap users.</p>
+
+
+<p><span style="white-space: pre;">	</span>
+Zenmap is not meant to replace Nmap, but to make it more useful.</p>
+
+
+<p><span style="white-space: pre;">	</span></p>
+
+
+<p><h2> Here are some of the features of this program :</h2></p>
+
+<ol>
+
+<h3><p><li> Interactive and graphical results viewing :</h3></p>
+<p><span style="white-space: pre;">	</span>
+ Zenmap can display Nmap&#39;s normal output, but you can also arrange its display to show all ports on a host or all hosts running a particular service. It summarizes details about a single host or a com scan in a convenient display. You can even use Zenmap to draw a topology map of discovered networks.</li></p>
+
+
+
+<p><h3><li> Comparison :</h3></p>
+<p><span style="white-space: pre;">	</span>
+ You can use Zenmap to graphically show the differences between two scans. This can help you to track new hosts or services appearing on their networks, or existing ones going down.</li></p>
+
+
+
+<p><h4><li> Repeatability :</h4></p> 
+<p><span style="white-space: pre;">	</span>
+You can use Zenmap&#39;s command profiles to run the same scan more than once.</p>
+
+
+<p><h4><li> Ease of use :</h4></p>
+<p><span style="white-space: pre;">	</span>
+ Zenmap is easy to use and is especially useful for people without much experience in Linux shell.</p>
+<p><br /></p>
+</ol>
+
+<p><n>Zenmap is usually packaged with Nmap itself, but if you want to download it separately, you can do it at <a href="https://nmap.org/download.html">Here</a>.</n></p>    
+
+  </div>
+  
+</ol>
+
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About us</h2>
+      <p>free ethical hacking course for an enthusiast to learn ethical hacking from beginner to intermediate, By <a href="https://techdogie.blogspot.com/">Techdogie</a> team.</p>
+    </div>
+    <div class="card">
+      <h3>Follow us</h3>
+      <p><a href="https://techdogie.blogspot.com/">Techdogie</a></p>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <h2> <a href="index.html">Home</a></h2>
+</div>
+</body>
+</html>

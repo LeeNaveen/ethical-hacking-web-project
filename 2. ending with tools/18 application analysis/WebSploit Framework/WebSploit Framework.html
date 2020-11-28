@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+fieldset {
+  background-color: #eeeeee;
+  width: 90%; 
+   font-size:14px;        
+    
+}
+r {
+  background-color: silver;
+  font-size: 19px;
+  width: 90%;
+   }
+n  {
+      font-size: 20px;
+     }
+code {
+	background-color: #eeeeee;
+          }
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+    font-family: 'Lexend Deca', sans-serif;
+  padding: 20px;
+  margin: 0;
+        width: 100%;
+        height: 20vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 2px;
+  font-size: xx-small;
+  text-align: center;
+  background: white;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+@-webkit-keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+    @keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  background: #ffffff;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+.frame-area {
+  display: block;
+  background: #f1f1f1;
+  width: 100%;  /* RESPONSIVE WIDTH */
+  max-width: auto;
+  height: 750px;
+  overflow: hidden;  /* EDIT TO hidden FOR NO SCROLLBAR */
+  border: #999999 1px solid;
+  margin: 0px;
+  padding: 0px;
+  }
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+
+  <a href="index.html"><img src="https://1.bp.blogspot.com/-tuZ2JeNu8TY/X2Gjn91qNQI/AAAAAAAAoQs/Yn_Ij5cLcp8qrFL1nPMipYGMXljXOmkBQCK4BGAYYCw/s1600/ronnie.png" class=" square responsive-img materialboxed"></a>
+
+</div>
+
+<div class="row">
+
+  <div class="leftcolumn" >
+
+
+
+
+<ul>
+
+
+
+
+
+
+
+
+<center><h1>WebSploit Framework</h1></center> 
+
+<center><img src="img-websploit.png" height="500" width="700"/></center>
+	<p><span style="white-space: pre;">	</span>
+	Websploit is a high level MITM ( Man in the Middle ) framework.</p>
+	<p><span style="white-space: pre;">	</span>
+	WebSploit is an open source project which is used to scan and analysis remote system in order to find various type of vulnerabilites. This tool is very powerful and support multiple vulnerabilities.</p>
+<br>
+
+	<h2>Description :</h2>
+	
+	<ul style="list-style-type:disc">
+		<p><li> Social Engineering Works</p>
+		<p><li> Scan,Crawler & Analysis Web</p>
+		<p><li> Automatic Exploiter</p>
+		<p><li> Support Network Attacks</p>
+		<p><li> Autopwn &ndash; Used From Metasploit For Scan and Exploit Target Service</p>
+		<p><li> wmap &ndash; Scan,Crawler Target Used From Metasploit wmap plugin</p>
+		<p><li> format infector &ndash; inject reverse & bind payload into file format</p>
+		<p><li> phpmyadmin Scanner</p>
+		<p><li> CloudFlare resolver</p>	
+		<p><li> LFI Bypasser</p>
+		<p><li> Apache Users Scanner</p>
+		<p><li> Dir Bruter</p>
+		<p><li> admin finder</p>
+		<p><li> MLITM Attack &ndash; Man Left In The Middle, XSS Phishing Attacks</p>
+		<p><li> MITM &ndash; Man In The Middle Attack</p>
+		<p><li> Java Applet Attack</p>
+		<p><li> MFOD Attack Vector</p>
+		<p><li> USB Infection Attack</p>
+		<p><li> ARP Dos Attack</p>
+		<p><li> Web Killer Attack</p>
+		<p><li> Fake Update Attack</p>
+		<p><li> Fake Access point Attack</p>
+		<p><li> Wifi Honeypot</p>
+		<p><li> Wifi Jammer</p>
+		<p><li> Wifi Dos</p>
+		<p><li> Bluetooth POD Attack</p>
+	</ul>
+	<br>
+
+<h2>Download Link : </h2>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<b><a href="https://sourceforge.net/projects/websploit/files/latest/download"><img src="Click-Here.png" height="200" width="200"/></a></b>
+<br>
+
+<h2>Installation :</h2>
+
+	&emsp;&emsp;<b>Manual install via git :</b> <br><br>
+		&emsp;&emsp;&emsp;&emsp;<code>&nbsp;$ git clone https://github.com/websploit/websploit.git&nbsp;</code>
+<br><br>
+		&emsp;&emsp;&emsp;&emsp;<code>&nbsp;$ cd websploit&nbsp;</code> 	<br><br>
+
+		&emsp;&emsp;&emsp;&emsp;<code>&nbsp;$ python setup.py install&nbsp;</code>	<br><br>
+
+	&emsp;&emsp;<n><b>Execute via command line :</b></n> <br><br>
+
+		&emsp;&emsp;&emsp;&emsp;<code>&nbsp;$ websploit&nbsp;</code>	<br><br>
+
+	&emsp;&emsp;<n><b>Install via apt :</b></n> <br><br>
+
+		&emsp;&emsp;&emsp;&emsp;<code>&nbsp;$ apt&ndash;get install websploit&nbsp;</code>	<br><br>
+
+
+<h2>Menu :</h3>
+
+	<center><img src="img1-websploit.png" height="400" width="700"/></center>
+
+
+	&emsp;&emsp;<n><b>Select module :</b></n>	<br><br>
+
+		&emsp;&emsp;&emsp;&emsp;<code>&nbsp;wsf > use arp_spoof&nbsp;</code>	<br><br>
+
+	&emsp;&emsp;<n><b>with options command you can see options of current module :</b></n>	<br><br>
+
+		&emsp;&emsp;&emsp;&emsp;<code>&nbsp;wsf > arp_spoof > options&nbsp;</code>	<br><br>
+
+	&emsp;&emsp;<n><b>Change options with set command :</b></n>	<br><br>
+
+		&emsp;&emsp;&emsp;&emsp;<code>&nbsp;wsf > arp_spoof > set target 192.168.1.24&nbsp;</code>	<br><br>
+
+	&emsp;&emsp;<n><b>Finally run module via execute command :</b></n>	<br><br>
+
+		&emsp;&emsp;&emsp;&emsp;<code>&nbsp;wsf > arp_spoof > execute&nbsp;</code>	<br><br>
+
+<br>
+
+<p><n>If you want Video about <b>Websploit Framework</b>, <a href="https://www.youtube.com/watch?v=q5JLsWE2lXE">Click Here</a></n></p>
+<br><br>
+
+Source : <a href="https://sourceforge.net/p/websploit/wiki/Home/">sourceforge.net</a>
+
+
+
+
+
+</ul>
+
+
+
+ </div>
+  
+</ol>
+
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About us</h2>
+      <p>free ethical hacking course for an enthusiast to learn ethical hacking from beginner to intermediate, By <a href="https://techdogie.blogspot.com/">Techdogie</a> team.</p>
+    </div>
+    <div class="card">
+      <h3>Follow us</h3>
+      <p><a href="https://techdogie.blogspot.com/">Techdogie</a></p>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <h2> <a href="index.html">Home</a></h2>
+</div>
+</body>
+</html>

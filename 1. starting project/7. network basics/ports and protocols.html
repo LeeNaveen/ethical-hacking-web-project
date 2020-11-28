@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+    font-family: 'Lexend Deca', sans-serif;
+  padding: 20px;
+  margin: 0;
+        width: 100%;
+        height: 20vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 2px;
+  font-size: xx-small;
+  text-align: center;
+  background: white;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+@-webkit-keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+    @keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  background: #ffffff;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+.frame-area {
+  display: block;
+  background: #f1f1f1;
+  width: 100%;  /* RESPONSIVE WIDTH */
+  max-width: auto;
+  height: 750px;
+  overflow: hidden;  /* EDIT TO hidden FOR NO SCROLLBAR */
+  border: #999999 1px solid;
+  margin: 0px;
+  padding: 0px;
+  }
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a href="index.html"><img src="https://1.bp.blogspot.com/-tuZ2JeNu8TY/X2Gjn91qNQI/AAAAAAAAoQs/Yn_Ij5cLcp8qrFL1nPMipYGMXljXOmkBQCK4BGAYYCw/s1600/ronnie.png" class=" square responsive-img materialboxed"></a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn" >
+
+
+
+<center><h1>Ports and Protocols </h1></center>
+    <p style="text-align:justify">
+	
+	
+
+	<ul>	
+	<ul style="list-style-type:disc">
+	<p><li>When data is transmitted over a network, it is essentially done over what is called a port.</p>
+	<p><li>You can think of ports as separate communication channels that hold specific purpose.</p>
+	<p><li>For example, if you are browsing the web, you typically send traffic over port 80 or 443 because those are meant for web browsing.</p>
+	<p><li>In total there are 65535 ports, but we only need to know a handful.</p>
+	</ul>
+
+	<h2>Top Ports & Protocols to Know :</h2>
+	<ul style="list-style-type:disc">
+	<p><li>Among all 65535 ports, there are some ports that are known as <q>Common Ports</q>.</p>
+	<p><li>They are used frequently for specific reasons and will be very helpful for you to understand as a hacker.</p>
+	<p><li>You should attempt to commit the following ports/protocols to memory or at least have them listed somewhere that you can reference very quickly.</p>
+	</ul>
+	
+	<h2>Top Ports & Protocols to Know Cont. :</h2>
+	
+	<ol><p><li>Port 20/21 &mdash; File Transfer Protocol</p>
+	<p><li>Port 22 &mdash; Secure Shell</p>
+	<p><li>Port 23 &mdash; Telnet</p>
+	<p><li>Port 25 &mdash; Simple Mail Transfer Protocol</p>
+	<p><li>Port 53 &mdash; Domain Name Server</p>
+	<p><li>Port 80 &mdash; HyperText Transfer Protocol</p>
+	<p><li>Port 110 &mdash; Post Office Protocol 3</p>
+	<p><li>Port 123 &mdash; Network Time Protocol</p>
+	<p><li>Port 139 &mdash; Server Message Block Over NETBIOS</p>
+	<p><li>Port 161 &mdash; Simple Network</p>
+	<p><li>Port 389 &mdash; Lightweight Directory Access Protocol</p>
+	<p><li>Port 443 &mdash; HyperText Transfer Protocol Secure</p>
+	<p><li>Port 445 &mdash; Server Message Block</p>
+	<p><li>Port 3389 &mdash; Remote Desktop Protocol</p></ol>
+
+	<h2>TCP and UDP :</h2>
+	<ul style="list-style-type:disc">
+	<p><li>When using ports, it is important to know that each port exists on both TCP & UDP.</p>
+	
+	<p><li>TCP is a connection&ndash;oriented protocol built around confirming packet delivery.</p>
+	<p><li>This means that every packet that is sent over TCP has its delivery confirmed and is resent if delivery fails, making it a little slower than UDP.</p>
+	
+	<p><li>UDP is known as a connection&ndash;less protocol, meaning that it does not check for failed transmission of packets.</p>
+	<p><li>As a result, UDP is faster but may result in some lost packets.</p>
+	</ul></ul>
+
+	</p>
+   
+
+ 
+  </div>
+  
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About us</h2>
+      <p>free ethical hacking course for an enthusiast to learn ethical hacking from begginner to intermediate, By <a href="https://techdogie.blogspot.com/">Techdogie</a> team.</p>
+    </div>
+    <div class="card">
+      <h3>Follow us</h3>
+      <p><a href="https://techdogie.blogspot.com/">Techdogie</a></p>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <h2> <a href="index.html">Home</a></h2>
+</div>
+</body>
+</html>

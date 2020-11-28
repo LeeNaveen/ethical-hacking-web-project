@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+n {
+	font-size : 19px;
+   }
+
+/* Add a gray background color with some padding */
+body {
+    font-family: 'Lexend Deca', sans-serif;
+  padding: 20px;
+  margin: 0;
+        width: 100%;
+        height: 20vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 2px;
+  font-size: xx-small;
+  text-align: center;
+  background: white;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+@-webkit-keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+    @keyframes gradientBG {
+        0% {
+            background-position: 0 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0 50%
+        }
+    }
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  background: #ffffff;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  margin: 0;
+        width: 100%;
+        height: 15vh;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 300% 200%;
+        -webkit-animation: gradientBG 15s ease infinite;
+        animation: gradientBG 15s ease infinite
+}
+
+.frame-area {
+  display: block;
+  background: #f1f1f1;
+  width: 100%;  /* RESPONSIVE WIDTH */
+  max-width: auto;
+  height: 750px;
+  overflow: hidden;  /* EDIT TO hidden FOR NO SCROLLBAR */
+  border: #999999 1px solid;
+  margin: 0px;
+  padding: 0px;
+  }
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a href="index.html"><img src="https://1.bp.blogspot.com/-tuZ2JeNu8TY/X2Gjn91qNQI/AAAAAAAAoQs/Yn_Ij5cLcp8qrFL1nPMipYGMXljXOmkBQCK4BGAYYCw/s1600/ronnie.png" class=" square responsive-img materialboxed"></a>
+</div>
+
+
+
+<div class="row">
+  <div class="leftcolumn" >
+
+<ul>
+
+	<center><h1>Introduction to Ethical Hacking</h1></center>
+    <p style="text-align:justify"><center><img src="img-introduction.jpg" height="50" width="500" class=" square responsive-img materialboxed "></center>
+	
+
+	<center><h2>What is Ethical hacking And its types..!</h2></center>
+	
+	<h2>What is Hacking?</h2>
+	<p><span style="white-space: pre;">	</span>
+	Hacking is identifying weakness in computer systems or networks to exploit its 
+	weaknesses to gain access.<n> Example of Hacking :</n> Using password cracking algorithm 
+	to gain access to a system.
+	Computers have become mandatory to run a successful businesses. 
+	It is not enough to have isolated computers systems; they need 
+	to be networked to facilitate communication with external businesses. 
+	This exposes them to the outside world and hacking. Hacking means using 
+	computers to commit fraudulent acts such as fraud, privacy invasion, 
+	stealing corporate/personal data, etc. Cyber crimes cost many 
+	organizations millions of dollars every year. Businesses need to 
+	protect themselves against such attacks.</p>
+
+<br>
+
+	<h2>Who is a Hacker? Types of Hackers</h2>
+<p><span style="white-space: pre;">	</span>
+	A Hacker is a person who finds and exploits the weakness in computer 
+	systems and/or networks to gain access. Hackers are usually skilled 
+	computer programmers with knowledge of computer security.</p>
+
+	<h4>Hackers are classified according to the intent of their actions. </h4>
+	&emsp;&nbsp;&nbsp;The following list classifies hackers according to their intent.
+
+<ol>
+	<h3><li>Ethical Hacker ( White Hat ) :</h3>
+	<p><span style="white-space: pre;">	</span>
+	 A hacker who gains access to systems with a view to fix the identified weaknesses. They may also perform penetration Testing and vulnerability assessments.</p>
+
+ 	<h3><li>Cracker ( Black Hat ) :</h3><p><span style="white-space: pre;">	</span> A hacker who gains unauthorized access to computer 
+	systems for personal gain. The intent is usually to steal corporate 
+	data, violate privacy rights, transfer funds from bank accounts etc.</p>
+	
+	<h3><li>Grey Hat :</h3> <p><span style="white-space: pre;">	</span>A hacker who is in between ethical and black hat hackers. 
+	He/she breaks into computer systems without authority with a view to 
+	identify weaknesses and reveal them to the system owner.</p>
+
+	<h3><li>Script Kiddies :</h3> <p><span style="white-space: pre;">	</span>A non&ndash;skilled person who gains access to computer systems 
+	using already made tools.</p>
+
+	<h3><li>Hacktivist :</h3><p><span style="white-space: pre;">	</span> A hacker who use hacking to send social, religious, and political, 
+	etc. messages. This is usually done by hijacking websites and leaving the message 
+	on the hijacked website.</p>
+
+	<h3><li>Phreaker :</h3><p><span style="white-space: pre;">	</span> A hacker who identifies and exploits weaknesses in telephones instead of computers.</p>
+   
+</ol>     
+	</p>
+    
+</ul>
+
+  </div>
+  
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About us</h2>
+      <p>free ethical hacking course for an enthusiast to learn ethical hacking from begginner to intermediate, By <a href="https://techdogie.blogspot.com/">Techdogie</a> team.</p>
+    </div>
+    <div class="card">
+      <h3>Follow us</h3>
+      <p><a href="https://techdogie.blogspot.com/">Techdogie</a></p>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <h2> <a href="index.html">Home</a></h2>
+</div>
+</body>
+</html>

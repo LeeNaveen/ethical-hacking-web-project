@@ -1,0 +1,81 @@
+01 introduction,
+02 cyber security,
+03 cyber security market,
+04,05 ethical hacking vs pentest and hacker types,
+06 4 elements of security,
+07 network basics,
+	ip address and how data travel across network
+	ports and protocol
+	public and private ip address
+	subnets
+08 terminalogy,
+09 process of hacking, 
+10 common methods of hacking,
+11 what exactly cyber security, 
+12 job opportunities,( its included in extra info)
+13 skills to become an ethical hacker,
+14 os
+15 top 10 tools
+
+16 volunerablity analysis
+	Nmap
+ 	Nikto
+
+17 web analysis
+	burpsuit
+	dirbuster and gobuster
+
+18 application analysis
+	metasploit
+	websploit
+	maltego
+
+19 database analysis
+	sql lite
+	sqlmap
+
+20 Password attacks
+	crunch
+ 	hydra
+	johntheripper
+
+21 wireless attacks
+	aircrack ng
+	kismet
+	wifitool
+	fernwifi
+	
+22 spoofing attacks
+	airdumb-ng
+	ghost phisher
+	
+23 reverse enginering
+	clang++
+	apktool
+
+24 exploitation tools
+	metasploit
+	msf payload
+	beef
+	exploit db
+	
+25 sniffing and spoofing
+	mitm
+	ettercap
+	wireshark
+
+26 post exploitation
+	proxy tunnel
+	veil
+	
+27 reporting tools
+	fardayide
+	maltego
+	pipal
+	
+28 social engineering
+	set
+
+extra info
+	mac changer
+	relavant info to become proffessional
